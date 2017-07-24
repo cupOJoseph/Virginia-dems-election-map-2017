@@ -12,16 +12,27 @@ console.log("Disabled scrollWheelZoom");
 map.setMinZoom(7);
 console.log("set min zoom level to 7");
 
+var replist = [4,5,6,14,15,16,19,22,24,76,78,24,61];
+ //list of districts by number where democrats are not running
+
 //set pop up on map click
 function onEachFeature(feature, layer) {
-  var popupTemplate = `
-    <h3>District #${feature.properties.DISTRICT_N}</h3>`;
-    var id_num = feature.properties.DISTRICT_N;
-    var dis_info = $('#' + id_num).html();
+    if (replist.indexOf(feature.properties.OBJECTID) == -1) {
+        //create pop up for districts dems are running in
 
-    popupTemplate = popupTemplate + dis_info;
+        var popupTemplate = `
+          <h3>District #${feature.properties.DISTRICT_N}</h3>`;
+          var id_num = feature.properties.DISTRICT_N;
+          var dis_info = $('#' + id_num).html();
 
-  layer.bindPopup(popupTemplate);
+          popupTemplate = popupTemplate + dis_info;
+
+        layer.bindPopup(popupTemplate);
+    }else{
+        //do nothing... for now
+    }
+
+
 }
 
 
@@ -48,8 +59,7 @@ var geojson;
 
 console.log("created geojson");
 
-var replist = [4,5,6,14,15,16,19,22,24,76,78,24,61];
- //list of districts by number where democrats are not running
+
  //no 4,5,6,14,15,16,19,22,76,78,24,61.
 
 //set color
