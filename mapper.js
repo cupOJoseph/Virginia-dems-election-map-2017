@@ -28,9 +28,9 @@ function onEachFeature(feature, layer) {
 
           //testing
           //console.log("candidate 1: " +  candidates["1"]["First"] + " " +  candidates["1"]["Last"] + candidates["1"]["Twitter"]);
-          var twitterlink = "https://twitter.com/" + candidates[feature.properties.OBJECTID]["Twitter"];
-          var sitelink = candidates[feature.properties.OBJECTID]["Website"];
-          var facebook = candidates[feature.properties.OBJECTID]["Facebook"];
+          var twitterlink = "https://twitter.com/" + candidates["" + feature.properties.OBJECTID]["Twitter"];
+          var sitelink = candidates["" + feature.properties.OBJECTID]["Website"];
+          var facebook = candidates["" + feature.properties.OBJECTID]["Facebook"];
 
           //TODO
           //add above elements to popup dynamically
