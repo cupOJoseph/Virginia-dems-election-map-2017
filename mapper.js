@@ -14,17 +14,13 @@ console.log("set min zoom level to 7");
 
 //set pop up on map click
 function onEachFeature(feature, layer) {
-  const popupTemplate = `
-    <h3>District #${feature.properties.DISTRICT_N}</h3>
-    <h4>Demographic Data (VAP/TP)</h4>
-    <p>Asian: ${feature.properties.VAPASIAN} / ${feature.properties.ASIAN}</p>
-    <p>Black: ${feature.properties.VAPBLACK} / ${feature.properties.BLACK}</p>
-    <p>Hispanic: ${feature.properties.VAP_HISP} / ${feature.properties.TOT_HISP}</p>
-    <p>Pacific Islander: ${feature.properties.VAPHAWPI} / ${feature.properties.HAWPI}</p>
-    <p>White: ${feature.properties.VAPWHITE} / ${feature.properties.WHITE}</p>
-    <p>Multi: ${feature.properties.VAPMULTI} / ${feature.properties.MULTI}</p>
-    <p>Other: ${feature.properties.VAPOTHER} / ${feature.properties.OTHER}</p>
-    `;
+  var popupTemplate = `
+    <h3>District #${feature.properties.DISTRICT_N}</h3>`;
+    var id_num = feature.properties.DISTRICT_N;
+    var dis_info = $('#' + id_num).html();
+
+    popupTemplate = popupTemplate + dis_info;
+
   layer.bindPopup(popupTemplate);
 }
 
