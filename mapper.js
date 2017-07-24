@@ -32,6 +32,9 @@ function onEachFeature(feature, layer) {
           var sitelink = candidates[feature.properties.OBJECTID][Website];
           var facebook = candidates[feature.properties.OBJECTID][Facebook];
 
+          //TODO
+          //add above elements to popup dynamically
+
           popupTemplate = popupTemplate + dis_info;
 
         layer.bindPopup(popupTemplate);
