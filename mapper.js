@@ -15,15 +15,22 @@ console.log("set min zoom level to 7");
 var replist = [4,5,6,14,15,16,19,22,24,76,78,24,61];
  //list of districts by number where democrats are not running
 
+//loaded candidates as  var = candidates [{candidate},{candidate}] from index
+
 //set pop up on map click
 function onEachFeature(feature, layer) {
     if (replist.indexOf(feature.properties.OBJECTID) == -1) {
         //create pop up for districts dems are running in
 
-        var popupTemplate = `
-          <h3>District #${feature.properties.DISTRICT_N}</h3>`;
+        var popupTemplate = `<h3>District #${feature.properties.DISTRICT_N}</h3>`;
           var id_num = feature.properties.DISTRICT_N;
-          var dis_info = $('#' + id_num).html();
+          var dis_info = $('#candidate').html();
+
+          //testing
+          //console.log("candidate 1: " +  candidates["1"]["First"] + " " +  candidates["1"]["Last"] + candidates["1"]["Twitter"]);
+          var twitterlink = "https://twitter.com/" + candidates[feature.properties.OBJECTID][Twitter];
+          var sitelink = candidates[feature.properties.OBJECTID][Website];
+          var facebook = candidates[feature.properties.OBJECTID][Facebook];
 
           popupTemplate = popupTemplate + dis_info;
 
@@ -51,9 +58,6 @@ $.ajax({
     }).addTo(map);
 });
 
-//testing user clicked
-
-///================End of user click testing=============//
 
 var geojson;
 
@@ -85,34 +89,8 @@ function style(features) {
         }
     }
 
-    //highlight districts on mouse over
-/*
-    function resetHighlight(e)
-    {
-        geojson.resetStyle(e.target);
-        info.update();
-    }
-
-    function zoomToFeature(e) {
-        console.log("Hi.");
-    }
-
-    function onEachFeature(feature, layer) {
-        layer.on({
-            mouseover: highlightFeature,
-            mouseout: resetHighlight,
-            click: zoomToFeature
-        });
-    }*/
-
-    /*geojson = L.geoJson(districts, {
-        style: style,
-        onEachFeature: onEachFeature
-    }).addTo(map);*/
-    //=========End of highlight features ============//
-
     //=========info box=====//
-    /*            var info = L.control();
+            var info = L.control();
 
             info.onAdd = function (map) {
                 this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -122,14 +100,12 @@ function style(features) {
 
             // method that we will use to update the control based on feature properties passed
             info.update = function (props) {
-                this._div.innerHTML = '<h4>Total Population</h4>' +  (props ?
-                    '<b>' + props.TOT_POP
-                    : 'Hover over a district');
+                this._div.innerHTML =  'Click on your district.';
             };
 
             info.addTo(map);
         //=======================end info box===//
-*/
+
 
     //Style the map
 //L.geoJson(districts, {style: style}).addTo(map); //
