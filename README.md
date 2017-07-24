@@ -10,9 +10,9 @@ File Descriptions:
 
 va_houseplan : a zipped shape file, because that's how mapbox likes it.
 
-districts.js : a very large json file with
+data/districts : a compressed geojson file.  You can get a larger, more precise file, but this runs faster.
 ```javascript
-var districts = {a bunch of stuff{properties[],{a bunch of coordinates}}}
+{a bunch of stuff{properties[],{a bunch of coordinates}}}
 ```
 This is the same as the shape files, but quicker and dirtier to use as embedded in a webpage.
 
