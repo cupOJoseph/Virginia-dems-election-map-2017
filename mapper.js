@@ -12,38 +12,40 @@ console.log("Disabled scrollWheelZoom");
 map.setMinZoom(7);
 console.log("set min zoom level to 7");
 
-function highlightFeature(e) {
-    var layer = e.target;
-
-    layer.setStyle({
-        fillColor: '#b0b1b2',
-        weight: 2,
-        opacity: 1,
-        color: white,
-        dashArray: '.25',
-        fillOpacity: 0.7
-    });
-
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-    }
-
-    //UPDATE INFO BAR based on hover
-    info.update(layer.feature.properties);
+//set pop up on map click
+function onEachFeature(feature, layer) {
+  const popupTemplate = `
+    <h3>District #${feature.properties.DISTRICT_N}</h3>
+    <h4>Demographic Data (VAP/TP)</h4>
+    <p>Asian: ${feature.properties.VAPASIAN} / ${feature.properties.ASIAN}</p>
+    <p>Black: ${feature.properties.VAPBLACK} / ${feature.properties.BLACK}</p>
+    <p>Hispanic: ${feature.properties.VAP_HISP} / ${feature.properties.TOT_HISP}</p>
+    <p>Pacific Islander: ${feature.properties.VAPHAWPI} / ${feature.properties.HAWPI}</p>
+    <p>White: ${feature.properties.VAPWHITE} / ${feature.properties.WHITE}</p>
+    <p>Multi: ${feature.properties.VAPMULTI} / ${feature.properties.MULTI}</p>
+    <p>Other: ${feature.properties.VAPOTHER} / ${feature.properties.OTHER}</p>
+    `;
+  layer.bindPopup(popupTemplate);
 }
+
+
+//load my new districts file
+$.ajax({
+  url:"https://raw.githubusercontent.com/jschiarizzi/Virginia-dems-election-map-2017/master/data/districts.geojson",
+  dataType: "json",
+  success: console.log("Districts data successfully loaded."),
+  error: function (xhr) {
+    console.error(xhr.statusText);
+  }})
+  .then(districts => {
+    L.geoJson(districts, {
+      style: style,
+      onEachFeature
+    }).addTo(map);
+});
 
 //testing user clicked
 
-var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
-
-map.on('click', onMapClick);
 ///================End of user click testing=============//
 
 var geojson;
@@ -78,7 +80,7 @@ function style(features) {
     }
 
     //highlight districts on mouse over
-
+/*
     function resetHighlight(e)
     {
         geojson.resetStyle(e.target);
@@ -95,16 +97,16 @@ function style(features) {
             mouseout: resetHighlight,
             click: zoomToFeature
         });
-    }
+    }*/
 
-    geojson = L.geoJson(districts, {
+    /*geojson = L.geoJson(districts, {
         style: style,
         onEachFeature: onEachFeature
-    }).addTo(map);
+    }).addTo(map);*/
     //=========End of highlight features ============//
 
     //=========info box=====//
-                var info = L.control();
+    /*            var info = L.control();
 
             info.onAdd = function (map) {
                 this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -121,7 +123,7 @@ function style(features) {
 
             info.addTo(map);
         //=======================end info box===//
-
+*/
 
     //Style the map
-L.geoJson(districts, {style: style}).addTo(map); //
+//L.geoJson(districts, {style: style}).addTo(map); //
