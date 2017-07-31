@@ -27,8 +27,8 @@ function onEachFeature(feature, layer) {
           var dis_info = $('#candidate').html();
 
           //testing
-          console.log("candidate 1: " +  candidates["1"]["First"] + " " +  candidates["1"]["Last"] + candidates["1"]["Twitter"] + " objectid = " + feature.properties.OBJECTID);
-          //var twitterlink = "https://twitter.com/" + candidates["" + feature.properties.OBJECTID]["Twitter"];
+          console.log("candidate 1: " +  candidates[feature.properties.DISTRICT_N]["First"] + " " +  candidates["1"]["Last"] + candidates["1"]["Twitter"] + " objectid = " + feature.properties.OBJECTID);
+          //var twitterlink = "https://twitter.com/" + candidates[" " + feature.properties.OBJECTID]["Twitter"];
           //var sitelink = candidates["" + feature.properties.OBJECTID]["Website"];
           //var facebook = candidates["" + feature.properties.OBJECTID]["Facebook"];
 
