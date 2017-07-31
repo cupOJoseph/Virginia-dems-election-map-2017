@@ -48,7 +48,7 @@ function onEachFeature(feature, layer) {
 
 //load my new districts file
 $.ajax({
-  url:"https://raw.githubusercontent.com/jschiarizzi/Virginia-dems-election-map-2017/master/data/districts_no_water.geojson",
+  url:"https://github.com/jschiarizzi/Virginia-dems-election-map-2017/raw/master/data/district_no_water.geojson",
   dataType: "json",
   success: console.log("Districts data successfully loaded."),
   error: function (xhr) {
