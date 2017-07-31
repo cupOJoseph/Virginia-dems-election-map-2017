@@ -1,5 +1,5 @@
 var candidates = {
-  "1": {
+  1: {
     "First": "Alicia",
     "Last": "Kallen",
     "Photo": "",
@@ -7,7 +7,7 @@ var candidates = {
     "Twitter": "alicia4swva",
     "Facebook": "https://www.facebook.com/alicia4swva/"
   },
-  "2": {
+  2: {
     "First": "Jennifer",
     "Last": "Carroll-Foy",
     "Photo": "",
@@ -15,7 +15,7 @@ var candidates = {
     "Twitter": "JCarrollFoy",
     "Facebook": "https://www.facebook.com/JenniferCarrollFoy/"
   },
-  "3": {
+  3: {
     "First": "Bill",
     "Last": "Bunch",
     "Photo": "",
@@ -23,7 +23,7 @@ var candidates = {
     "Twitter": "Bunch4Bunch",
     "Facebook": "https://www.facebook.com/BunchForDelegate/"
   },
-  "7": {
+  7: {
     "First": "Flo",
     "Last": "Kettner",
     "Photo": "",
@@ -31,7 +31,7 @@ var candidates = {
     "Twitter": "Flo4DelegateNRV",
     "Facebook": "https://www.facebook.com/Flo4NRV/"
   },
-  "8": {
+  8: {
     "First": "Steven",
     "Last": "McBride",
     "Photo": "",
@@ -39,7 +39,7 @@ var candidates = {
     "Twitter": "StevenGMcBride",
     "Facebook": "https://www.facebook.com/mcbride4delegate"
   },
-  "9": {
+  9: {
     "First": "Stephanie",
     "Last": "Cook",
     "Photo": "",
@@ -47,7 +47,7 @@ var candidates = {
     "Twitter": "cookfordelegate",
     "Facebook": "https://www.facebook.com/cookfordelegate/"
   },
-  "10": {
+  10: {
     "First": "Wendy",
     "Last": "Gooditis",
     "Photo": "",
@@ -55,7 +55,7 @@ var candidates = {
     "Twitter": "Wendyfordel",
     "Facebook": "https://www.facebook.com/wendygooditisfordelegate/"
   },
-  "12": {
+  12: {
     "First": "Chris",
     "Last": "Hurst",
     "Photo": "",
@@ -63,7 +63,7 @@ var candidates = {
     "Twitter": "ChrisHurstVA",
     "Facebook": "https://www.facebook.com/ChrisHurstForVirginia/"
   },
-  "13": {
+  13: {
     "First": "Danica",
     "Last": "Roem",
     "Photo": "",
@@ -71,7 +71,7 @@ var candidates = {
     "Twitter": "pwcdanica",
     "Facebook": "https://www.facebook.com/danicafordelegate/"
   },
-  "17": {
+  17: {
     "First": "Djuna",
     "Last": "Osborne",
     "Photo": "",
@@ -79,7 +79,7 @@ var candidates = {
     "Twitter": "Djuna4Delegate",
     "Facebook": "https://www.facebook.com/djuna4delegate/"
   },
-  "18": {
+  18: {
     "First": "Tristan",
     "Last": "Shields",
     "Photo": "",
@@ -87,7 +87,7 @@ var candidates = {
     "Twitter": "tristansheilds",
     "Facebook": "https://www.facebook.com/VoteTristanShields/"
   },
-  "20": {
+  20: {
     "First": "Michele",
     "Last": "Edwards",
     "Photo": "",
@@ -95,7 +95,7 @@ var candidates = {
     "Twitter": "MicheleforVA",
     "Facebook": "https://www.facebook.com/MicheleforDelegate/"
   },
-  "21": {
+  21: {
     "First": "Kelly",
     "Last": "Fowler",
     "Photo": "",
@@ -103,7 +103,7 @@ var candidates = {
     "Twitter": "VoteforFowler",
     "Facebook": "https://www.facebook.com/KellyFowlerforDelegate/"
   },
-  "23": {
+  23: {
     "First": "Natalie",
     "Last": "Short",
     "Photo": "",
@@ -111,7 +111,7 @@ var candidates = {
     "Twitter": "NATALIEASHORT",
     "Facebook": "https://www.facebook.com/NatalieShortforDelegate/"
   },
-  "25": {
+  25: {
     "First": "Angela",
     "Last": "Lynn",
     "Photo": "",
@@ -119,7 +119,7 @@ var candidates = {
     "Twitter": "LynnforVirginia",
     "Facebook": "https://www.facebook.com/lynn4virginia/?fref=mentions&pnref=story"
   },
-  "26": {
+  26: {
     "First": "Brent",
     "Last": "Finnegan",
     "Photo": "",
@@ -127,7 +127,7 @@ var candidates = {
     "Twitter": "bfinnegan",
     "Facebook": "https://www.facebook.com/BrentVa26/"
   },
-  "27": {
+  27: {
     "First": "Larry",
     "Last": "Barnett",
     "Photo": "",
@@ -135,7 +135,7 @@ var candidates = {
     "Twitter": "Barnett4del",
     "Facebook": "https://www.facebook.com/Barnett4Delegate/"
   },
-  "28": {
+  28: {
     "First": "Josh",
     "Last": "Cole",
     "Photo": "",
@@ -143,7 +143,7 @@ var candidates = {
     "Twitter": "JCole4VA",
     "Facebook": "https://www.facebook.com/jcole4VA/"
   },
-  "29": {
+  29: {
     "First": "Casey",
     "Last": "Turben",
     "Photo": "",
@@ -151,7 +151,7 @@ var candidates = {
     "Twitter": "Turben4Delegate",
     "Facebook": "https://www.facebook.com/CaseyTurbenforDelegate/"
   },
-  "30": {
+  30: {
     "First": "Ben",
     "Last": "Hixon",
     "Photo": "",
@@ -159,7 +159,7 @@ var candidates = {
     "Twitter": "benhixonva",
     "Facebook": "https://www.facebook.com/benhixonVA/"
   },
-  "31": {
+  31: {
     "First": "Elizabeth",
     "Last": "Guzman",
     "Photo": "",
@@ -167,7 +167,7 @@ var candidates = {
     "Twitter": "guzmanfordelegate",
     "Facebook": "https://www.facebook.com/elizabethguzmanva/"
   },
-  "32": {
+  32: {
     "First": "David",
     "Last": "Reid",
     "Photo": "",
@@ -175,7 +175,7 @@ var candidates = {
     "Twitter": "DavidReidVA",
     "Facebook": "https://www.facebook.com/reidfordelegate/"
   },
-  "33": {
+  33: {
     "First": "Tia",
     "Last": "Walbridge",
     "Photo": "",
@@ -183,7 +183,7 @@ var candidates = {
     "Twitter": "Tia4Delegate",
     "Facebook": "https://www.facebook.com/tiawalbridgefordelegate/"
   },
-  "40": {
+  40: {
     "First": "Donte",
     "Last": "Tanner",
     "Photo": "",
@@ -191,7 +191,7 @@ var candidates = {
     "Twitter": "Tanner4Delegate",
     "Facebook": "https://www.facebook.com/tanner4delegate/"
   },
-  "42": {
+  42: {
     "First": "Kathy",
     "Last": "Tran",
     "Photo": "",
@@ -199,7 +199,7 @@ var candidates = {
     "Twitter": "KathyKLTran",
     "Facebook": "https://www.facebook.com/KathyForDelegate/"
   },
-  "50": {
+  50: {
     "First": "Lee",
     "Last": "Carter",
     "Photo": "",
@@ -207,7 +207,7 @@ var candidates = {
     "Twitter": "carterforVA",
     "Facebook": "https://www.facebook.com/leecarterva/"
   },
-  "51": {
+  51: {
     "First": "Hala",
     "Last": "Ayala",
     "Photo": "",
@@ -215,7 +215,7 @@ var candidates = {
     "Twitter": "HalaAyala",
     "Facebook": "https://www.facebook.com/AyalaforDelegate/"
   },
-  "54": {
+  54: {
     "First": "Al",
     "Last": "Durante",
     "Photo": "",
@@ -223,7 +223,7 @@ var candidates = {
     "Twitter": "DuranteForVA",
     "Facebook": "https://www.facebook.com/DuranteForVA/"
   },
-  "55": {
+  55: {
     "First": "Morgan",
     "Last": "Goodman",
     "Photo": "",
@@ -231,7 +231,7 @@ var candidates = {
     "Twitter": "MorganGoodmanVA",
     "Facebook": "https://www.facebook.com/pg/MorganGoodman4Virginia/about/"
   },
-  "56": {
+  56: {
     "First": "Melissa",
     "Last": "Dart",
     "Photo": "",
@@ -239,7 +239,7 @@ var candidates = {
     "Twitter": "MelissaMDart56",
     "Facebook": "https://www.facebook.com/Dart4Delegate/"
   },
-  "58": {
+  58: {
     "First": "Kellen",
     "Last": "Squire",
     "Photo": "",
@@ -247,7 +247,7 @@ var candidates = {
     "Twitter": "SquireForYou",
     "Facebook": "https://www.facebook.com/squireforyou/"
   },
-  "59": {
+  59: {
     "First": "Tracy",
     "Last": "Carver",
     "Photo": "",
@@ -255,7 +255,7 @@ var candidates = {
     "Twitter": "None",
     "Facebook": "https://www.facebook.com/CarverforVirginia/"
   },
-  "60": {
+  60: {
     "First": "Jamaal",
     "Last": "Johnston",
     "Photo": "",
@@ -263,7 +263,7 @@ var candidates = {
     "Twitter": "None",
     "Facebook": "https://www.facebook.com/JohnstonforDelegate/"
   },
-  "62": {
+  62: {
     "First": "Sheila",
     "Last": "Bynum-Coleman",
     "Photo": "",
@@ -271,7 +271,7 @@ var candidates = {
     "Twitter": "sheilabcoleman",
     "Facebook": "https://www.facebook.com/sheilafordelegate/"
   },
-  "64": {
+  64: {
     "First": "Rebecca",
     "Last": "Colaw",
     "Photo": "",
@@ -279,7 +279,7 @@ var candidates = {
     "Twitter": "colawfor64",
     "Facebook": "https://www.facebook.com/Colawfor64th/"
   },
-  "65": {
+  65: {
     "First": "Francis",
     "Last": "Stevans",
     "Photo": "",
@@ -287,7 +287,7 @@ var candidates = {
     "Twitter": "StevensforDist65",
     "Facebook": "https://www.facebook.com/Stevens4Dist65/"
   },
-  "66": {
+  66: {
     "First": "Katie",
     "Last": "Sponsler",
     "Photo": "",
@@ -295,7 +295,7 @@ var candidates = {
     "Twitter": "KatieSponsler",
     "Facebook": "https://www.facebook.com/sponslerfordelegate/"
   },
-  "67": {
+  67: {
     "First": "Karrie",
     "Last": "Delaney",
     "Photo": "",
@@ -303,7 +303,7 @@ var candidates = {
     "Twitter": "KarrieKDelaney",
     "Facebook": "https://www.facebook.com/DelaneyforDelegate/"
   },
-  "68": {
+  68: {
     "First": "Dawn",
     "Last": "Adams",
     "Photo": "",
@@ -311,7 +311,7 @@ var candidates = {
     "Twitter": "AdamsForDel",
     "Facebook": "https://www.facebook.com/Adams4Delegate68th/"
   },
-  "72": {
+  72: {
     "First": "Schuyler",
     "Last": "VanValkenburg",
     "Photo": "",
@@ -319,7 +319,7 @@ var candidates = {
     "Twitter": "VVforDelegate",
     "Facebook": "https://www.facebook.com/VanValkenburg4VA/"
   },
-  "73": {
+  73: {
     "First": "Debra",
     "Last": "Rodman",
     "Photo": "",
@@ -327,7 +327,7 @@ var candidates = {
     "Twitter": "debrarodman73",
     "Facebook": "https://www.facebook.com/rodmanfordelegate/"
   },
-  "81": {
+  81: {
     "First": "Kimberly Anne",
     "Last": "Tucker",
     "Photo": "",
@@ -335,7 +335,7 @@ var candidates = {
     "Twitter": "kimberlytucker",
     "Facebook": "https://www.facebook.com/kimberlyannetucker/"
   },
-  "82": {
+  82: {
     "First": "Leigh Anne",
     "Last": "Bowling",
     "Photo": "",
@@ -343,7 +343,7 @@ var candidates = {
     "Twitter": "None",
     "Facebook": "https://www.facebook.com/Leigh-Anne-Bowling-for-VA-Delegate-312832055801177/"
   },
-  "83": {
+  83: {
     "First": "David",
     "Last": "Rose-Carmack",
     "Photo": "",
@@ -351,7 +351,7 @@ var candidates = {
     "Twitter": "David4Delegate",
     "Facebook": "https://www.facebook.com/DavidforDelegate/"
   },
-  "84": {
+  84: {
     "First": "Veronica",
     "Last": "Coleman",
     "Photo": "",
@@ -359,7 +359,7 @@ var candidates = {
     "Twitter": "colemanforVA",
     "Facebook": "https://www.facebook.com/coleman4va/"
   },
-  "85": {
+  85: {
     "First": "Cheryl",
     "Last": "Turpin",
     "Photo": "",
@@ -367,7 +367,7 @@ var candidates = {
     "Twitter": "ct_4_vab",
     "Facebook": "https://www.facebook.com/CT4VAB/"
   },
-  "88": {
+  88: {
     "First": "Stephen",
     "Last": "Aycock",
     "Photo": "",
@@ -375,7 +375,7 @@ var candidates = {
     "Twitter": "AycockforVA",
     "Facebook": "https://www.facebook.com/aycockforva/"
   },
-  "89": {
+  89: {
     "First": "Jay",
     "Last": "Jones",
     "Photo": "",
@@ -383,7 +383,7 @@ var candidates = {
     "Twitter": "jonesjay",
     "Facebook": "https://www.facebook.com/jayccjonesva/"
   },
-  "91": {
+  91: {
     "First": "Michael",
     "Last": "Wade",
     "Photo": "",
@@ -391,7 +391,7 @@ var candidates = {
     "Twitter": "wadefordelegate",
     "Facebook": "https://www.facebook.com/MichaelWadeForDelegate/"
   },
-  "94": {
+  94: {
     "First": "Zack",
     "Last": "Wittkamp",
     "Photo": "",
@@ -399,7 +399,7 @@ var candidates = {
     "Twitter": "ZackWittkamp",
     "Facebook": "https://www.facebook.com/votewittkamp/"
   },
-  "96": {
+  96: {
     "First": "Kelly",
     "Last": "Delucia",
     "Photo": "",
@@ -407,7 +407,7 @@ var candidates = {
     "Twitter": "KellyforVA",
     "Facebook": "https://www.facebook.com/kellyforva/"
   },
-  "97": {
+  97: {
     "First": "Cori",
     "Last": "Johnson",
     "Photo": "",
@@ -415,7 +415,7 @@ var candidates = {
     "Twitter": "JohnsonforVAHouse",
     "Facebook": "https://www.facebook.com/Johnsonfordelegate/"
   },
-  "98": {
+  98: {
     "First": "Sheila",
     "Last": "Crowley",
     "Photo": "",
@@ -423,7 +423,7 @@ var candidates = {
     "Twitter": "crowleyforva98",
     "Facebook": "https://www.facebook.com/pg/crowleyforva98/about/?ref=page_internal"
   },
-  "99": {
+  99: {
     "First": "Francis",
     "Last": "Edwards",
     "Photo": "",
@@ -431,7 +431,7 @@ var candidates = {
     "Twitter": "None",
     "Facebook": "https://www.facebook.com/pg/Edwards4Delegate/about/?ref=page_internal"
   },
-  "100": {
+  100: {
     "First": "Willie",
     "Last": "Randall",
     "Photo": "",

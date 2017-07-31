@@ -28,9 +28,9 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 
-        <script type="text/javascript" src="candidates.js">
+        <script type="text/javascript" src="candidates.js"></script>
+        <script type="text/javascript" src="./data/district_no_water.js"></script>
 
-        </script>
   </head>
 
   <body>
@@ -42,23 +42,30 @@
 
       <div class="container">
           <div class="row">
-              <div class="col-8" id="mapid">
+              <div class="col-10" id="mapid">
 
               </div>
-             <div id="candidate" hidden>
-                <br>
-              <h1 >Our Candidate is <span id="our_candidate_is">Willie Randall</span></h1>
-
-                  <div >
-                      <img id="candidate_img" src="http://www.vahousedems.org/sites/vahousedems2/files/Randall.jpg" alt="No image.">
-                 </div>
-
-                 <div class="candidate-info"> <span  class="candidate-website"><a href="https://www.randallfordelegate.com/" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="https://www.facebook.com/randallfordelegate/" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
-                    <a href="https://twitter.com/wcrandall" target="_blank" class="prim">Twitter</a></span>
-                </div>
-            </div>
+        <div class="col-2">
+            <br>
+            <h1>See who your Candidate is.</h1>
+            <p>Connect with them.</p>
+        </div>
           </div>
       </div>
+
+
+      <div id="candidate" hidden class="col-2">
+         <br>
+       <h1 >Our Candidate is <span id="our_candidate_is">Willie Randall</span></h1>
+
+           <div >
+               <img id="candidate_img" src="http://www.vahousedems.org/sites/vahousedems2/files/Randall.jpg" alt="No image.">
+          </div>
+
+          <div class="candidate-info"> <span  class="candidate-website"><a href="https://www.randallfordelegate.com/" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="https://www.facebook.com/randallfordelegate/" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
+             <a href="https://twitter.com/wcrandall" target="_blank" class="prim">Twitter</a></span>
+         </div>
+     </div>
 
       <script type="text/javascript" src="mapper.js"> </script>
   </body>
