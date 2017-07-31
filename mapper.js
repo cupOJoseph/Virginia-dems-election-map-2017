@@ -1,4 +1,4 @@
-var map = L.map('mapid').setView([37.5, -79], 7);
+var map = L.map('mapid').setView([38.2, -79.5], 7);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/schiarizzi/cj59vuej16abk2rmt34iod7pv/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2NoaWFyaXp6aSIsImEiOiJjajE4a3NuZWowNzQ5MzNvN2xkdGh2YnVwIn0.dOZQgGCs8Fwxpy7bmRvvTg', {
     id: 'mapbox.light'
@@ -24,23 +24,37 @@ function onEachFeature(feature, layer) {
     if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) {
         //create pop up for districts dems are running in
 
-        var popupTemplate = `<h3>District #${feature.properties.NAME}</h3>`;
-          var id_num = parseInt(feature.properties.NAME);
-          var dis_info = $('#candidate').html();
+
 
           //testing feature.properties.DISTRICT_N
-          console.log("checking" + feature.properties.NAME);
-          console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
-          //var twitterlink = "https://twitter.com/" + candidates[" " + feature.properties.OBJECTID]["Twitter"];
-          //var sitelink = candidates["" + feature.properties.OBJECTID]["Website"];
-          //var facebook = candidates["" + feature.properties.OBJECTID]["Facebook"];
+          //console.log("checking" + feature.properties.NAME);
+          //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
 
+          var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
+          var sitelink = candidates[feature.properties.NAME]["Website"];
+          var facebooklink = candidates[feature.properties.NAME]["Facebook"];
+          var first = candidates[feature.properties.NAME]["First"];
+          var last = candidates[feature.properties.NAME]["Last"]
           //TODO
           //add above elements to popup dynamically
 
-          popupTemplate = popupTemplate + dis_info;
+          var popupTemplate = `<h3>District ${feature.properties.NAME}</h3>
+          <div id="candidate" class="col">
+             <br>
+           <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
-        //layer.bindPopup(popupTemplate);
+               <div >
+                   <img id="candidate_img" src="http://www.vahousedems.org/sites/vahousedems2/files/Randall.jpg" alt="No image.">
+              </div>
+
+              <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
+                 <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
+             </div>
+             <br>
+             <br>
+         </div>`;
+
+          layer.bindPopup(popupTemplate);
     }else{
         //do nothing... for now
     }
