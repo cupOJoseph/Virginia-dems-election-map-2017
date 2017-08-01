@@ -212,7 +212,7 @@ var candidates = {
     "Last": "Plum",
     "Photo": "https://lh3.googleusercontent.com/fyPQkIQ8a0UtXiCmw1qG5NOiUKbgFlA-OBhqWe0N-z1lP2bw3w1XaNGESwtJMaNQA-bUlCH8FvXRlhW2vktqwfXuO8pqQFvo_dVMj6IAUOxhho-qU35jnTJrN0GR9dwLR8lKxqMhD1Q_VkK-R7vqVVc9MuF9gdJSeJsn0VrMyF00lNrO0Q90TRdajKKNBTBpA8436n4_MBN1NN9YMiHH1iRTVuz4eAORkPQg34Zl_X8a6aLfnqbjtcp6H-AAe2rhTpM0jSB-fJjmvTqn7tjY69d2VR_4dz7Tixs9W1uo64KRCG7y4I9h9bJ3AKrkp2UpDmS5to1ZPevB6g3uKwxie0GR0DoMGW1sb-4CMmd7DdTX_nb1d9LQtrJR53lik_CkYZ6770UBJdfyqOWiV-8javtCu0RbHcaEUSUIvwZSngSe8XVqNWZbSobXTxwgsxB_5H3vIHVUg--ypygrX9HbOCYHoyOhKjM5rlt5dMstf5pbHbHJP39ZDLc_uscTHt9jlxuf4MqPigN3q8YQgWcFTX9vbxCcbqMrhVgPTzhPEBua2sKYAlAoBBctBDN2024x8mz5Vrd_RL4DD3rAWGDim4Q2bhoJKkjn6pck45r3V0X7Fycic1BOrNu_38vKLOYq8dWR-QnZ22fvGg5u5A6NuhaVDA5TrukMUHLYAmVtuszopw=s640-no",
     "Website": "http://www.kenplum.com/",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/kenneth.plum"
   },
   "37": {
@@ -236,8 +236,8 @@ var candidates = {
     "Last": "Watts",
     "Photo": "https://lh3.googleusercontent.com/saY5HFuqoidC3ZirsSganmdHEkjpJPGQfATVUxe0BaDMwnlLDp4-A-7Ze0DdyUT2cA2e4Hd5etC1hfc27yeYCuKg2EcY49WBx7-0t4nVYYVMJKxBYxrE4w201Dv6INO-r8UZZQJJoZ_xxBNnUgh1k1JbIFwLaY3dt8UhUfIyMhYEcyiRLo1dj_NfguKsGGfRF6R22xy315thu8Fts_gloWZbjlj5iNmdb6qkwscuSllf6io6Cy9IQsLGlB_3uHKx2HIXOfTo03RjS0aWdUJk9j8_1mCxLj-2wlB_xBWqrHHQZvR02rvrdP0sZqI51_vprKVhGvzJrxavafeRH-r4O1A_8ZnLnF8nEy80UzhWBzJ65t-F2IDZn6XX4-GJIlbEMXKvAfMqF9qkOlZJ-OjE7cL6XMUyQLXdbu-znEEoLf8vleYvC6YAu5Z8YFW7v_kycPJ-47ETJBcwo9zka-VkXHLcR_0tDAVvOZlEUmeQ4AxQdcZ1R63mzPsPenFSSKw8CF4kr9jNKsb7t7UKaLgVwhSp_sUjfpQB9hiJVhDy78ZydqW30Ptxx_VTYrR4W06o49qeBckK8-cqLQOtrokEuWw6crsEK1yQrFMueouX8VBRtwA3gSbuIwRib4bryb6NAsmbi9Bb1fbZSrT0kPBW9YryhnHAkvNzV58_YLaJb9S0nw=w290-h387-no",
     "Website": "http://www.vivianwatts.com",
-    "Twitter": "@_WinVirginia_",
-    "Facebook": "https://www.facebook.com/WinVirginia/"
+    "Twitter": "@vahousedems",
+    "Facebook": "https://www.facebook.com/vahousedems/"
   },
   "40": {
     "First": "Donte",
@@ -340,7 +340,7 @@ var candidates = {
     "Last": "Torian",
     "Photo": "https://lh3.googleusercontent.com/OmBWTPNNYO_4ZHlqCdE4SqhA-GIwTAkh9pNjdPyQ2CQFviE669Su0_oqTwsizAIU3GIBAB_JCY8fd_cFBrIjgl8M2piRKUVrsiy_rLVOWh-N33lAN1z3a47pHii6jIeFT_iXjuC3DGd0awJKs1ydvzxP7DeEL0nOLW7HSnrMGw8oTefQPq71_sWebHMmC4zc84hVYZI-X-9_Qe3DzrV9O_w8cyw4TPfrggW2VnpyG7xs9ZVGO9XzN6vYqH4cqg-GUf4_oH6-cdb3nc_gMatxPmKULz1MKfVavrWpsOzTILEKRSw7ryxXyfOJ4csXW2pYn3vADYyE-hts-3TOuYmk4cUYZCW9r-_7rHK3_dUOj90UCIgi--R9mM39WUDBIpPvKiBySa2BOWtIT0_rK67_YM_CbaU9QNly3yEKXLHqvcH90xHSDuiuYVLf18Awly5_Lh0ooxeQMIWUkTOtVmyEaSHIvgDRSk4Us4qEmLc9b4FFCf_TsxCw3w4bEx_f0sAfK6AgguAEakhNS5M3DKDMBtzUFE4mLUW3UEldD0CWEmdd6j-Ug1rSlw1Xj0rkQ1TD9-JgVLe7M-qXgAKcK9IWI8qMccpn8A8i_4e901lT9YHntzu_4QZ7d2DbRi7oaXF8d0OljKNWOoPw1a-m0Q7jGWfhZFJPKBoSKrXzUHkWSfXo7g=s133-no",
     "Website": "http://www.delegatetorian.com/",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/luke.torian"
   },
   "53": {
@@ -396,7 +396,7 @@ var candidates = {
     "Last": "Carver",
     "Photo": "https://lh3.googleusercontent.com/xmA2kZ9055cnnGDmNbFmv1BZi8I0To85WDNG59Q8PM81bgK3qYOpkTC_xpAtMYanIxoyIo8DSPcNiwqlMavO2BYh-rxE9Nk-gzareWuCi5MyBotYecPSM4GywyeYMbcSv9MxOe2Wk6ZxXu2bRzKuiW7UNpu4ytESCLU2ZM41sfkQZr18ZtDiM6duTFiLrafS-3KB_wLoxCmFPDh0ewOBGmMmzHLElO80DSoGHYE2OK3v51g8bZJG_wzgh2-nlJ6CJSQxpBnX3YfKwqcMC-FHeZpXtmRGUh5nhH1aUfeHLMFZAFvSH7GiVtxUFcayI9ewP5WwLtYA6LKKXXZRbD42GRTKx2PBzkiWW6v27mMeuSsZ7DpeYvRhGRzvseLmh3JO2LIeMrw12QF_THUCdvCkLs5K1aCv57TiQqXjtsu5MCeELUQTZgEn38xKdpnAoKy-LQNsLSgEc8Xo8ZG8uaQ-rTfIka1VH5hOkMkFouv4tMav_fa0ZnE1EIAXNLWOmOKJVeb2ln1r6jBMnD0rAszWqHekQTQOxAS7lfp6VDUqaJ7J7XjLkQOhjGinmMeAwEMdfh-q27346lCOcmRSwHfdHc4hVkcDxJOrJiBJ7xD8qYhgsmM6ISH6_4oReklcqcT0yh-BeHdkhGPsdTlAoaf6VHD-VDAD39Z_hfaQzMslvFF-Rg=w588-h676-no",
     "Website": "http://carverforvirginia.nationbuilder.com/",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/CarverforVirginia/"
   },
   "60": {
@@ -404,7 +404,7 @@ var candidates = {
     "Last": "Johnston",
     "Photo": "https://lh3.googleusercontent.com/eLDmnVDjJkBrTBu2QR3A3E3rc9jz84cq6I2zUFvXFDkMeHoFfVSqs3rxSsrPGFdNYwQuUJjg8xAHbBVjk1anWWvRUzJyEDKS86r6NKggLUOq6DjtVcfqgS83GTHph-u4beRfPY3czPQQ6lmlKYED1ENwYr4jORoi8Cu-KOmpq8l49QGIPRFCshW1tYVUXZ7bhm9YxoHAZIq_Cgi690sRzx59Bq7GA1vfonKX3AyOr7WdhU28mXF__1GQCjM0WlI2KHZnrGXkfbWtoTGu0NMh752jcOmGKaSW9x0Fxil1x9lCKmeV7L3P_73A7lsw2XtgJxI2wcauw5qMV3N9SD8RQSbCVv1OOkkLwyMbSzHh6j3RmBC2L-FwS81rUIq9JctZEnfiKYPL1aqU-FoJq2bR98XNj7ayvfMa57NEowaTyMW40qdpPHfGcoCW6qzuvvaHrHFn7PD-fNcltiDjGvyubOEcnAH3LBn1knVeCB0W7WG7mZM6qYlJ-X4msOD5-hjU2bODHb1gerzyHwXnBTIKu890zEHpEouq78M0WawBBLN_ID_QDfClFPxLiaptYhTuPIKG1Mp3AFNMXPemS_H5a88q6Tpt82axJfTa7lvOh-NFYYoTd3aHsj0Wowaesy9-SCcp6oehmyZGEDs1hdJNMzzO6iaMxHUbJVZqcu_xLruj=w588-h676-no",
     "Website": "http://www.johnstonfordelegate.org/",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/JohnstonforDelegate/"
   },
   "62": {
@@ -468,7 +468,7 @@ var candidates = {
     "Last": "Carr",
     "Photo": "https://lh3.googleusercontent.com/WlDAkUD0Hl3A_oHuG6sSvMQRVzmcR0l3H0TEL_rhSfZRX71v8MLvTHCZ5IAjDDYtVAVBhmxcUFtsHUjb9YqGu_X5_5Z8KrJ8_M-ihMAg5ZpNi0MR8oL_5g6cUcnb5v0GLz_cnHlnRNsmF8AjLRcGrcraoKgucTnBHFSUo7T_ialHQuUypPnDMmCH5Riz_Pg9rXWvAb_xHuSVJ8Uek7rS_LycuDckkEoVMgIFTpqyanepqn-NYOnlTz0jzsfOgs1vERVW3Sy8eLEkNXKSGhCtqtQCGLK-I2o8JyD_YrcJmIDHFqPAeqdF4kwVzJj8yGnfoSoixT-t-ABV7nMj8cI28u_FV0dZyOvGLBKyfpQbIFpNU0D8g3Fmkkp3_SPCA3uDMUfLWknvhGoy3HGZE8UyPAA3ynpxyAxbwfAi_IdqAb9sQZkp9PbjvKNoGOe_aKUFfUoTRfo-C1LSTcIeDN9_XD_TE9ZKYDx3S1T839IzkaFn3d8s5ExovmMY5zbX3XC9b09MiGSOoKoe88UJZoEtZkcCKM3JNEmkKWtfin_UppudFw3x3S44FQCXQoF4X_uejs3odT3brwODP--fzTVpvzf-z5Am3UdHONZ3R0W2rMYPCraAhtlOPK0fu9TE_b29q0zfhb73aMEYfgKwy1RS4YFHf-rIue4GcDdogXUrnPAqtg=s172-no",
     "Website": "http://www.betsycarr.org",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/delegatebetsycarr/"
   },
   "70": {
@@ -476,7 +476,7 @@ var candidates = {
     "Last": "McQuinn",
     "Photo": "https://lh3.googleusercontent.com/NxZtJfnj-8tkuNQfvLWDu3jGuHgFdEnDm-Ob2j-lwa_WDe30eTGRpMjt6weDxhDsw02dDg6rP-mZWLtVVdR0034CAK5fYB6H3IrAqEB4Ia80kruV6qtRSu8GxloFKGBUZHhjC9sNlyjezY1Tnv5vCir2Zeb2gwTwbIHZ4ew6G9qB0g0Gs04nt8jkyjUIJvOso9Z99hzoG8I9gfnMP_wR1zNNwsWZnmtVhBDDqT2relsVmftwOR9_xnxUwa91GYR1GACwGWyT7Uv0FkrjuQoZsKM8k48VzH3Tt8N9XHZGlL3PDy8wNEIj_wzV6_QcCE5BoGaUL6O6c-8C9bhLunWlF2xVSAYwgDI0kFgFk6H4toh5uIlvkWyl5FstOKR_SpPtRnHCuaVSwomspDElro1gVnM5ZiZTotpSXw850Kaa3ZXikiedeb61QNQqihdej5sZL-HCycyDBTfQoWLNLk4GfajtrOaPv91cquzvqYMBXJC8puU3-vPAv8ORz0frq2C0FNRRSqjVxywZhoUnEo6C34K-u5tplA9o9GThjvLurRBtw1uc5777MEj6VE9igVBNwxF2-8NiILGRR1k20f4NGaReBzo8TsVmdREqi2Rs0j5qx2mu7rQreGqsXZqt3h8aPpYNlPD6VhASGU530mYlLPpx5mhzNA7Cp7e84FUtaHyx1w=s200-no",
     "Website": "http://www.delegatedeloresmcquinn.com/",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/mcquinncampaign/"
   },
   "71": {
@@ -540,7 +540,7 @@ var candidates = {
     "Last": "James",
     "Photo": "https://lh3.googleusercontent.com/gWbyLnBo0qHPXJlaAk5QUq_OtMk276d1yWt1yvztm0JkR0UWlWlrGcGkUYZE95RyOrZ8bjS1Uh1fPVJf_7rx85ps6_0VKYsPqtqZ203X668_PBnXbBhfsNDv28H6RxIOWwVnqIlNZOlnv9w4FvrXJFUlItKm8zek0m_shH4KE7NzvkHm6Cx1PxGkkJfO13a0yoJRXboyv0U2IlBC5gbUYFXIjOgBPPMDfdSkk4VMqDtTKav6yKv6Fs1JdLfkfs6e2CiemuobszqJ4-O0blKTALIi9SBQWPsFeKf4ovyFjmIrr0WT5MFf3yvRlR2Jebp6t83IqTlzX2yv8rnOGLiIhVgIWy7I6jVifG3CTylNT6ie-zJVJ-YO9IL9VpQrzqjWWvhYRXLFFZB8P7J_iDzp0k0t_JPVYCIzvHV7jxDy5IA2icp7e-kbRCLRYZPWUx7MmF92DFBqLeYKlFvHY9lcbldMrer-mCzpsfdEYp9PApWKd7uwUL4UWa29VRkP9f0LVJQadJ0egHjW7ADkLsffARPxWbHAdVm9FkjwME0NvSuyZJmSqFOtpNQjTwkEdEAjZYsYsH-ptqsMda2Mm7KlkkEb8Hn9hQnxEeGp1Vl4q8XSVD6SBcNyPchr2htaitcUtu1-18YRvpglUMhOowzJJVJnVAvVA_UpLTI-d8L3d7DIQw=s676-no",
     "Website": "http://www.delegatematthewjames.com/",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/DelegateMJames/"
   },
   "81": {
@@ -556,7 +556,7 @@ var candidates = {
     "Last": "Bowling",
     "Photo": "https://lh3.googleusercontent.com/OxiYHUeCjNh9r-S20u9Pcc_4m6g8OfxTDe7hggfnmiPwHB-vRNtV5KIx9vXffPvaXyTmE00yByQnckEMZ91131DUx5abhZ2Ks6J7GiWNO3fOzrgnmdHfN43Ld3jbbaNWEn2fmJhA5r3vZqRMArV-2ITUe6XkAv95asqKcK9Yv13g0K82n11E_TzPwwRKDhSAYBE95yWNvFTd34vREPvMZhLnoItqDLOXa9_GDpmmBNAhq2ePgFbEPVxTgYdXdrH1pbBEPwiZFsKHTk1Z_lN3fiewKAZLjUM7HbPJAIOrHL6wieuyzA412hMRXy1qEqUBZvlp2P4WbfLGNWutVIIw3mHM2cjUSbGLblcq10iasibY3-tF0ifmvHSo8JfPHxjdPP1TcBTDo6zvdhMDJLsJt2aVuBwQCmt6ebeAxJkFe18VWsCngYUFmBNGnWG5ep8_wML5HkM_ujsBWTT_Agdcu43Og_5b0JEacEgZ6A8hB4HH-NXB2zo7SY2O0QMhQ0d3E5Fw5mh6W4NmqN1mzF505CG02j2u_RxW2bxul8PZr4a7tuT2S-mLBu3GexR-eEXyPHrJ4doUaVzVcD0xSCcBphDdDkQAjQbC9efjK8GEWLV-ES3CZZx5Ujwep5r1kAAsSwvFmhojJmMHedC35sKJGapuVWxN09O4E6oQapj2MGvY=s200-no",
     "Website": "winvirginia.org",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/Leigh-Anne-Bowling-for-VA-Delegate-312832055801177/"
   },
   "83": {
@@ -608,12 +608,12 @@ var candidates = {
     "Facebook": "https://www.facebook.com/aycockforva/"
   },
   "89": {
-    "First": "Daun",
-    "Last": "Hester (retiring)",
+    "First": "Jay",
+    "Last": "Jones ",
     "Photo": "via.placeholder.com/400x400.png",
-    "Website": "winvirginia.org",
-    "Twitter": "@_WinVirginia_",
-    "Facebook": "https://www.facebook.com/WinVirginia/"
+    "Website": "jayjones.vote",
+    "Twitter": "@vahousedems",
+    "Facebook": "https://www.facebook.com/vahousedems/"
   },
   "90": {
     "First": "Joe",
@@ -692,7 +692,7 @@ var candidates = {
     "Last": "Edwards",
     "Photo": "https://lh3.googleusercontent.com/-QnHBTVREJM9gZa8RkUVmdlxeKihUX-2hz-Mg6bi2T3e3mRRKIeUHwoBTKJjKxiA_o5lYUOCgvjLS-RpDIP6FLgGmD3MnO4PAouyzCkgGB3e-s2ZE7n-7u-lLCwaHF0tWaWcmnoyN0H6KbD8vF9UFJo5zSLgSeTHox92ED0c5JFwVDNLpHWclZ4iLStcOVBwx96CB4HhfFi2mKo7Cld2Cs0OVg1alG2SRMqQ65z5D_aAFsF020hrkv6682Vx4TDGm_mHkze9dXUvFuv6Uwv7YX6dp7KFO-kf8IterRnyn1jx-9m6VgTzIl4vVg4wMJZRvfpsEdUMS9zEA9XnS7FAvvehdmK7CnJxc379Vu7ODk9l32NinAtwCd8SYQ3wqo6dV2Hrs9aDHwtNjcmwVvQv7H2tyTdEIRbQhm_mwpeWNwpnG3SS3-Ng3FpA5QQZ1tgdcvUSknqJReswYBiXqpxRpqIU33Hj5rOfwazlyK2fQaQC4UfC8JJDBmlpsaFDg6HHdPKPhnsqQrhcJZRTaT-3J7ooiQuXtyCAc3TFyILq8gAcV5LQQsp1JFdedoaguIvmQNGB0YKdEvGDZPm1xpMrxunZwlfGsGkAym5zAW96-mOQVX-tUmURWSoeDzlX8Wytto9ahKi8yanYU09PMIKPYPIdW-FsHoEz3DKVXFME-Fmq=w563-h647-no",
     "Website": "http://www.edwards4delegate.com/",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/pg/Edwards4Delegate/about/?ref=page_internal"
   },
   "100": {
@@ -700,7 +700,7 @@ var candidates = {
     "Last": "Randall",
     "Photo": "https://lh3.googleusercontent.com/pJ-9TBZw3V3UjU09xG6H1SM72razG9U7INj8830kz_S0yQzocah8Sy2w_W7_ehzvGei3v4J6h5OV_vSIFEOau5rQgRgkjAmWFymAxkDmAN8RC06Cgyn7X7L0zlkSHneCwbQCLN0Sl44EbwCNrxuxuPfW6EFOzaFtRRaTeFQDME0P9-cGpApuPb9fVGtDcYcXxqKcNE1YLgCZ0QUrXY2RXtXAf96BZBAcwSUO-1gtDlRpFABZcaewwLafq5BgdjVmkdnovbiXnz456x9xiHK5i8204mi2Auc2ntf7KY0HyDOeGTfdFTm7ZhQGglPvr5kpiIOESLZA7DkACyRybiXvoebawt99GdxMhiCOcxbKuV93jj6IU8fldBl3M2po6NokFBwgML7n-APqCRgbz6uCSNS5mwSlDo1VHrFzIibr6dQxTBbAXuvMVpPb3H4cFA5ttWpweWNx6BwX1PP2SmZoZVwvcOZkw5HKfRumkE2bIjwsxh6epQeg1RAybPZu_HHOGn7MxtZ2I4Dc39wsrjXGQtJ25G2i2iTFwdoLJXgMM-RN3TpXgFgaYPvdiJmvRyrI2riwb_-j5KCql_aqOJd_UFwlixikcp_o11_lSVlUT1_bGkP0JkY-dg5izsLJmCB9P_zrSmonK54UjoMlqTDXCJodM0EHIxxZBO171xRNbK4IpQ=w588-h676-no",
     "Website": "https://www.randallfordelegate.com/",
-    "Twitter": "@_WinVirginia_",
+    "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/randallfordelegate/"
   }
 }
