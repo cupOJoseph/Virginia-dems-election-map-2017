@@ -13,9 +13,9 @@ map.setMinZoom(7);
 console.log("set min zoom level to 7");
 
 //districts I dont have info for rn
-var replist = [4,5,6,11,14,15,16,19,22,24,34,35,36,37,38,39,41,43,44,45,46,47,48,49,52,53,57,61,63,69,70,71,74,75,76,77,78,79,80,86,87,90,92,93,95];
+var dem_uncontested_list = [11,34,35,36,37,38,39,41,43,44,45,46,47,48,49,52,53,57,63,69,70,71,74,75,77,79,80,86,87,90,92,93,95]; //dark blue
  //list of districts by number where democrats are not running
-  //no 4,5,6,14,15,16,19,22,76,78,24,61.
+  var replist = [4,5,6,14,15,16,19,22,76,78,24,61]; //uncontested
 
 //loaded candidates as  var = candidates [{candidate},{candidate}] from index
 
@@ -34,17 +34,19 @@ function onEachFeature(feature, layer) {
           var sitelink = candidates[feature.properties.NAME]["Website"];
           var facebooklink = candidates[feature.properties.NAME]["Facebook"];
           var first = candidates[feature.properties.NAME]["First"];
-          var last = candidates[feature.properties.NAME]["Last"]
+          var last = candidates[feature.properties.NAME]["Last"];
+          var img_link = candidates[feature.properties.NAME]["Photo"];
+
           //TODO
           //add above elements to popup dynamically
 
           var popupTemplate = `<h3>District ${feature.properties.NAME}</h3>
-          <div id="candidate" class="col">
+          <div id="candidate"  class="col">
              <br>
            <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
                <div >
-                   <img id="candidate_img" src="http://www.vahousedems.org/sites/vahousedems2/files/Randall.jpg" alt="No image.">
+                   <img id="candidate_img" src="${img_link}" alt="No image.">
               </div>
 
               <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
@@ -79,14 +81,27 @@ console.log("created geojson");
 //set color
 function style(feature) {
         if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) { //if the district number is in the demlist
-            return {
-                fillColor: '#3a41ff', //make it blue if dem running.
-                weight: 2,
-                opacity: 1,
-                color: 'white',
-                dashArray: '.25',
-                fillOpacity: 0.7
-            };
+            if(dem_uncontested_list.indexOf(parseInt(feature.properties.NAME)) == -1){
+                //contested, make it light blue 
+                return {
+                    fillColor: '#91b0ff', //make it blue if dem running.
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    dashArray: '.25',
+                    fillOpacity: 0.7
+                };
+            }else{
+                //un contested, make it dark blue
+                return {
+                    fillColor: '#3a41ff', //make it blue if dem running.
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    dashArray: '.25',
+                    fillOpacity: 0.7
+                };
+            }
         }else{
             return{
                 fillColor: '#d8d8d8', //make it blue if dem running.
