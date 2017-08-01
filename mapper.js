@@ -40,8 +40,8 @@ function onEachFeature(feature, layer) {
           //TODO
           //add above elements to popup dynamically
 
-          var popupTemplate = `<h3>District ${feature.properties.NAME}</h3>
-          <div id="candidate"  class="col">
+          var popupTemplate = `<h3 hidden > District ${feature.properties.NAME}</h3>
+          <div id="candidate" hidden class="col">
              <br>
            <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
@@ -56,7 +56,7 @@ function onEachFeature(feature, layer) {
              <br>
          </div>`;
 
-          layer.bindPopup(popupTemplate);
+          //layer.bindPopup(popupTemplate);
     }else{
         //do nothing... for now
     }
@@ -82,7 +82,7 @@ console.log("created geojson");
 function style(feature) {
         if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) { //if the district number is in the demlist
             if(dem_uncontested_list.indexOf(parseInt(feature.properties.NAME)) == -1){
-                //contested, make it light blue 
+                //contested, make it light blue
                 return {
                     fillColor: '#91b0ff', //make it blue if dem running.
                     weight: 2,
