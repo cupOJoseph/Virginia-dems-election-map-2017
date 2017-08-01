@@ -15,7 +15,7 @@ console.log("set min zoom level to 7");
 //districts I dont have info for rn
 var dem_uncontested_list = [11,34,35,36,37,38,39,41,43,44,45,46,47,48,49,52,53,57,63,69,70,71,74,75,77,79,80,86,87,90,92,93,95]; //dark blue
  //list of districts by number where democrats are not running
-  var replist = [4,5,6,14,15,16,19,22,76,78,24,61]; //uncontested
+var replist = [4,5,6,14,15,16,19,22,76,78,24,61]; //uncontested
 
 //loaded candidates as  var = candidates [{candidate},{candidate}] from index
 
@@ -61,20 +61,17 @@ function onEachFeature(feature, layer) {
         //do nothing... for now
     }
 
-
+    //On each feature
+    layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+		});
 }
 
 
-//load my new districts file
-    L.geoJson(districts, {
-      style: style,
-      onEachFeature
-    }).addTo(map);
+var geoJson;
 
-
-var geojson;
-
-console.log("created geojson");
+console.log("created geoJson");
 
 
 
@@ -135,16 +132,44 @@ function style(feature) {
         function highlightFeature(e) {
         var layer = e.target;
 
+        console.log();
+
         console.log("hover event.");
 
         layer.setStyle({
             weight: 5,
-            color: '#666',
+            color: '#ffffff',
             dashArray: '',
             fillOpacity: 0.7
         });
 
+
+
         if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
             layer.bringToFront();
         }
+
+        //tell the user what district is selected
+        info.update = function (props) {
+            this._div.innerHTML =  'District #' + layer.feature.properties.NAME;
+        };
+        info.addTo(map);
+
+        //test getting feature from layer
+        //console.log("layer -> feat num: " + layer.feature.properties.NAME);
     }
+
+    function resetHighlight(e) {
+        geoJson.resetStyle(e.target);
+        info.update = function (props) {
+            this._div.innerHTML =  'Click on your district.';
+        };
+
+        info.addTo(map);
+    }
+
+    //load my new districts file
+geoJson = L.geoJson(districts, {
+          style: style,
+          onEachFeature
+        }).addTo(map);
