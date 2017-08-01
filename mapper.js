@@ -172,35 +172,38 @@ function style(feature) {
 
     function getCandidate(e){
         console.log("Click event logged at district: " + e.target.feature.properties.NAME);
-
         var layer = e.target;
         var feature = e.target.feature;
 
-        var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
-        var sitelink = candidates[feature.properties.NAME]["Website"];
-        var facebooklink = candidates[feature.properties.NAME]["Facebook"];
-        var first = candidates[feature.properties.NAME]["First"];
-        var last = candidates[feature.properties.NAME]["Last"];
-        var img_link = candidates[feature.properties.NAME]["Photo"];
+        if(replist.indexOf(parseInt(feature.properties.NAME)) == -1){ //if a democrat is running in this area
 
-        var candidate_template = `<h3> District ${feature.properties.NAME}</h3>
-        <div id="candidate" class="col">
-           <br>
-         <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
-             <div >
-                 <img id="candidate_img" src="${img_link}" alt="No image.">
-            </div>
+            var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
+            var sitelink = candidates[feature.properties.NAME]["Website"];
+            var facebooklink = candidates[feature.properties.NAME]["Facebook"];
+            var first = candidates[feature.properties.NAME]["First"];
+            var last = candidates[feature.properties.NAME]["Last"];
+            var img_link = candidates[feature.properties.NAME]["Photo"];
 
-            <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
-               <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
-           </div>
-           <br>
-           <br>
-       </div>`
+            var candidate_template = `<h3> District ${feature.properties.NAME}</h3>
+            <div id="candidate" class="col">
+               <br>
+             <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
-       $("#candidate").html(candidate_template);
-       $("#candidate").show();
+                 <div >
+                     <img id="candidate_img" src="${img_link}" alt="No image.">
+                </div>
+
+                <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
+                   <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
+               </div>
+               <br>
+               <br>
+           </div>`
+
+           $("#candidate").html(candidate_template);
+           $("#candidate").show();
+        }
 
 
     }
