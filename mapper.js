@@ -170,13 +170,14 @@ function style(feature) {
         info.addTo(map);
     }
 
+    //jquery to create element in paage for the candidate of the district that was clicked on
+    //this function called on mouse click.
     function getCandidate(e){
         console.log("Click event logged at district: " + e.target.feature.properties.NAME);
         var layer = e.target;
         var feature = e.target.feature;
 
         if(replist.indexOf(parseInt(feature.properties.NAME)) == -1){ //if a democrat is running in this area
-
 
             var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
             var sitelink = candidates[feature.properties.NAME]["Website"];
@@ -205,8 +206,37 @@ function style(feature) {
            $("#candidate").show();
         }
 
-
     }
+
+    function getColor(d) {
+    return d > 1000 ? '#800026' :
+           d > 500  ? '#BD0026' :
+           d > 200  ? '#E31A1C' :
+           d > 100  ? '#FC4E2A' :
+           d > 50   ? '#FD8D3C' :
+           d > 20   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
+                      '#FFEDA0';
+}
+
+    //create legend for colors
+    var legend = L.control({position: 'topleft'});
+
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+        labels = [];
+
+        div.innerHTML = '<i style="background:' + '#91b0ff' + '"></i> ' +
+        ' - Democratic Challenger' + '<br>' + '<i style="background:' + '#3a41ff' + '"></i> ' +
+        ' - Democratic Incumbent';
+
+
+    return div;
+};
+
+legend.addTo(map); // add legend to the map
 
     //load my new districts file
 geoJson = L.geoJson(districts, {
