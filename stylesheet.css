@@ -16,14 +16,15 @@
     height: 85px;
 }
 
-#can-list h3{
+#can-list h3, p{
     display: inline-block;
+
 }
 
-#can-list span:before{
+#can-list span:before, p:before{
     content:" ";
     display:inline-block;
-    width:32px;
+    width:24px;
 }
 
 .info {
