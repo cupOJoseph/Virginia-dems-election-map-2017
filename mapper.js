@@ -189,14 +189,22 @@ function style(feature) {
             var last = candidates[feature.properties.NAME]["Last"];
             var img_link = candidates[feature.properties.NAME]["Photo"];
 
+            var challenger;
+
+            if(candidates[feature.properties.NAME]["chal"] == "c"){
+                challenger = "(Challenger)";
+            }else{
+                challenger = "(Incumbent)";
+            }
+
             var candidate_template = `
             <div id="candidate" class="col">
+            <h3> District ${feature.properties.NAME}</h3>
 
-             <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
                  <div >
                      <img id="candidate_img" src="${img_link}" alt="No image.">
                 </div>
-                <h3> District ${feature.properties.NAME}</h3>
+                <h1 ><span id="our_candidate_is">${first} ${last} ${challenger}</span></h1>
 
                 <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
                    <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
