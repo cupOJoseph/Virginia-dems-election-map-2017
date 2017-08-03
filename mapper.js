@@ -40,8 +40,8 @@ function onEachFeature(feature, layer) {
           //TODO
           //add above elements to popup dynamically
 
-          var popupTemplate = `<h3 hidden > District ${feature.properties.NAME}</h3>
-          <div id="candidate" hidden class="col">
+          var popupTemplate = `<h3  > District ${feature.properties.NAME}</h3>
+          <div id="candidate"  class="col">
              <br>
            <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
@@ -178,6 +178,8 @@ function style(feature) {
         var feature = e.target.feature;
 
         if(replist.indexOf(parseInt(feature.properties.NAME)) == -1){ //if a democrat is running in this area
+
+            console.log("dem is running.");
 
             var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
             var sitelink = candidates[feature.properties.NAME]["Website"];

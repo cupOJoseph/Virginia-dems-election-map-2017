@@ -610,7 +610,7 @@ var candidates = {
   "89": {
     "First": "Jay",
     "Last": "Jones ",
-    "Photo": "via.placeholder.com/400x400",
+    "Photo": "http://via.placeholder.com/400x400",
     "Website": "jayjones.vote",
     "Twitter": "@vahousedems",
     "Facebook": "https://www.facebook.com/vahousedems/"
