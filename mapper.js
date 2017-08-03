@@ -191,12 +191,12 @@ function style(feature) {
 
             var candidate_template = `
             <div id="candidate" class="col">
-            <h3> District ${feature.properties.NAME}</h3>
-             <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
+             <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
                  <div >
                      <img id="candidate_img" src="${img_link}" alt="No image.">
                 </div>
+                <h3> District ${feature.properties.NAME}</h3>
 
                 <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
                    <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
