@@ -10,22 +10,19 @@ for (var key in candidates) {
 
 
     var list_element = `
-    <h3  > District ${key}</h3>
     <div class="col">
-       <br>
-     <h1 ><span id="Lour_candidate_is">${Lfirst} ${Llast}</span></h1>
 
-         <div >
-             <img id="candidate_img" src="${Limg_link}" alt="No image available.">
-        </div>
+           <img id="sm_candidate_img" src="${Limg_link}" alt="No image available.">
+            <h3>District ${key}:</h3>
 
-        <div class="candidate-info"> <span  class="candidate-website"><a href="${Lsitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${Lfacebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
-           <a href="${Ltwitterlink}" target="_blank" class="prim">Twitter</a></span>
-       </div>
-       <hr>
-    </div>`;
+           <h3 ><span id="Lour_candidate_is">${Lfirst} ${Llast}</span></h3>
 
-    console.log("made a thing: \n" + list_element );
+           <span  class="candidate-website"><a href="${Lsitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${Lfacebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
+              <a href="${Ltwitterlink}" target="_blank" class="prim">Twitter</a></span>
+
+              <hr>
+     </div>`;
+
 
     $("#can-list").append(list_element);
 }

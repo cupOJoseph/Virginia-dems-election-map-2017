@@ -9,6 +9,22 @@
     height: 125px;
 }
 
+#sm_candidate_img
+{
+    border-style: solid;
+    border-color: rgb(48, 65, 255, 0.4);
+    height: 85px;
+}
+
+#can-list h3{
+    display: inline-block;
+}
+
+#can-list span:before{
+    content:" ";
+    display:inline-block;
+    width:32px;
+}
 
 .info {
     padding: 6px 8px;

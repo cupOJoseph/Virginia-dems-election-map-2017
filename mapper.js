@@ -30,18 +30,19 @@ function onEachFeature(feature, layer) {
           //console.log("checking" + feature.properties.NAME);
           //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
 
-          var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
+          /*var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
           var sitelink = candidates[feature.properties.NAME]["Website"];
           var facebooklink = candidates[feature.properties.NAME]["Facebook"];
           var first = candidates[feature.properties.NAME]["First"];
           var last = candidates[feature.properties.NAME]["Last"];
           var img_link = candidates[feature.properties.NAME]["Photo"];
 
-          //TODO
+
           //add above elements to popup dynamically
 
-          var popupTemplate = `<h3  > District ${feature.properties.NAME}</h3>
-          <div id="candidate"  class="col">
+          var popupTemplate = `
+          <div id=""  class="col">
+          <h3  id="num"> District ${feature.properties.NAME}</h3>
              <br>
            <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
@@ -54,7 +55,7 @@ function onEachFeature(feature, layer) {
              </div>
              <br>
              <br>
-         </div>`;
+         </div>`;*/
 
           //layer.bindPopup(popupTemplate);
     }else{
@@ -188,9 +189,9 @@ function style(feature) {
             var last = candidates[feature.properties.NAME]["Last"];
             var img_link = candidates[feature.properties.NAME]["Photo"];
 
-            var candidate_template = `<h3> District ${feature.properties.NAME}</h3>
+            var candidate_template = `
             <div id="candidate" class="col">
-               <br>
+            <h3> District ${feature.properties.NAME}</h3>
              <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
                  <div >
