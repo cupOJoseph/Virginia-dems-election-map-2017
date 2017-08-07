@@ -686,7 +686,7 @@ var candidates = {
   "89": {
     "First": "Daun",
     "Last": "Hester (retiring)",
-    "Photo": "via.placeholder.com/400x400.png",
+    "Photo": "http://via.placeholder.com/400x400.png",
     "Website": "winvirginia.org",
     "Twitter": "@_WinVirginia_",
     "Facebook": "https://www.facebook.com/WinVirginia/",

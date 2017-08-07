@@ -56,3 +56,12 @@
     margin-right: 8px;
     opacity: 0.7;
 }
+
+.list_el {
+
+}
+
+.list_el h3 {
+    bottom: 0;
+    left: 0;
+}
