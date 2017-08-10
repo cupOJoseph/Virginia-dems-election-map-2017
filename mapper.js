@@ -131,9 +131,9 @@ function style(feature) {
                 //contested, make it light blue
                 return {
                     fillColor: '#91b0ff', //make it blue if dem running.
-                    weight: 2,
+                    weight: .7,
                     opacity: 1,
-                    color: 'white',
+                    color: '#ffffff',
                     dashArray: '.25',
                     fillOpacity: 0.7
                 };
@@ -141,9 +141,9 @@ function style(feature) {
                 //un contested, make it dark blue
                 return {
                     fillColor: '#3a41ff', //make it blue if dem running.
-                    weight: 2,
+                    weight: .7,
                     opacity: 1,
-                    color: 'white',
+                    color: '#ffffff',
                     dashArray: '.25',
                     fillOpacity: 0.7
                 };
@@ -151,9 +151,9 @@ function style(feature) {
         }else{
             return{
                 fillColor: '#d8d8d8', //make it blue if dem running.
-                weight: 2,
+                weight: .7,
                 opacity: 1,
-                color: 'white',
+                color: '#ffffff',
                 dashArray: '.25',
                 fillOpacity: 0.7
             }
@@ -186,8 +186,8 @@ function style(feature) {
         console.log("hover event.");
 
         layer.setStyle({
-            weight: 5,
-            color: '#ffffff',
+            weight: 3,
+            color: '#2335ff',
             dashArray: '',
             fillOpacity: 0.7
         });
