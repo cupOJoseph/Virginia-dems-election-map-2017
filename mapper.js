@@ -19,6 +19,45 @@ var replist = [4,5,6,14,15,16,19,22,76,78,24,61]; //uncontested
 
 //loaded candidates as  var = candidates [{candidate},{candidate}] from index
 
+
+//================== get candidate profile ==============//
+function getProfile(num) {
+    var twitterlink = "https://twitter.com/" + candidates[num]["Twitter"];
+    var sitelink = candidates[num]["Website"];
+    var facebooklink = candidates[num]["Facebook"];
+    var first = candidates[num]["First"];
+    var last = candidates[num]["Last"];
+    var img_link = candidates[num]["Photo"];
+
+    var challenger;
+
+    if(candidates[num]["chal"] == "c"){
+        challenger = "(Challenger)";
+    }else{
+        challenger = "(Incumbent)";
+    }
+
+    var candidate_template = `
+    <div id="candidate" class="col">
+    <h3> District ${num}</h3>
+
+         <div >
+             <img id="candidate_img" src="${img_link}" alt="No image.">
+        </div>
+        <h1 ><span id="our_candidate_is">${first} ${last} ${challenger}</span></h1>
+
+        <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
+           <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
+       </div>
+       <br>
+       <br>
+   </div>`
+
+   $("#candidate").html(candidate_template);
+   $("#candidate").show();
+}
+
+
 //set pop up on map click
 function onEachFeature(feature, layer) {
     if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) {
@@ -180,41 +219,7 @@ function style(feature) {
 
         if(replist.indexOf(parseInt(feature.properties.NAME)) == -1){ //if a democrat is running in this area
 
-            console.log("dem is running.");
-
-            var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
-            var sitelink = candidates[feature.properties.NAME]["Website"];
-            var facebooklink = candidates[feature.properties.NAME]["Facebook"];
-            var first = candidates[feature.properties.NAME]["First"];
-            var last = candidates[feature.properties.NAME]["Last"];
-            var img_link = candidates[feature.properties.NAME]["Photo"];
-
-            var challenger;
-
-            if(candidates[feature.properties.NAME]["chal"] == "c"){
-                challenger = "(Challenger)";
-            }else{
-                challenger = "(Incumbent)";
-            }
-
-            var candidate_template = `
-            <div id="candidate" class="col">
-            <h3> District ${feature.properties.NAME}</h3>
-
-                 <div >
-                     <img id="candidate_img" src="${img_link}" alt="No image.">
-                </div>
-                <h1 ><span id="our_candidate_is">${first} ${last} ${challenger}</span></h1>
-
-                <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
-                   <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
-               </div>
-               <br>
-               <br>
-           </div>`
-
-           $("#candidate").html(candidate_template);
-           $("#candidate").show();
+            getProfile(feature.properties.NAME);
         }
 
     }
@@ -241,3 +246,10 @@ geoJson = L.geoJson(districts, {
           style: style,
           onEachFeature
         }).addTo(map);
+
+    //Use drop down info to select a state and bring up the profile.
+    $("#candidate_dropdown ").change(function () { //when the drop down changes, do a thing
+        var choice = $(this).find("option:selected").val(); //get selected value
+
+        getProfile(choice);
+    });
