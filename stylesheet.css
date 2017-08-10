@@ -1,6 +1,6 @@
 #mapid
 {
-    height: 420px; /*553*/
+    height: 450px; /*553*/
     width: 954px;
 }
 
@@ -11,14 +11,23 @@
 
 #sm_candidate_img
 {
+    display: inline-block;
     border-style: solid;
     border-color: rgb(48, 65, 255, 0.4);
     height: 85px;
 }
 
-#can-list h3, p{
+#can-list h3, #can-list p{
     display: inline-block;
+}
 
+.leaflet-control-attribution {
+    display: none;
+}
+
+.holder{
+    display: inline-block;
+    bottom: 0;
 }
 
 #can-list span:before, p:before{
@@ -57,11 +66,6 @@
     opacity: 0.7;
 }
 
-.list_el {
-
-}
-
-.list_el h3 {
-    bottom: 0;
-    left: 0;
+.list_el{
+        display: inline-block;
 }

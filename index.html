@@ -48,11 +48,10 @@
           </div>
           <div class="row">
               <div class="col">
-                  <br>
-                  <h1>See who your Candidate is.</h1>
-                  <p>Connect with them.</p>
+                  <p>Choose your district on the map <br>or select from the dropdown.</p>
                   <br>
                   <select class="option" id="candidate_dropdown">
+
                       <option value="1">District #1</option>
                       <option value="2">District #2</option>
                       <option value="3">District #3</option>
@@ -155,16 +154,23 @@
 
       <div class="container">
           <div class="row">
-              <div id="can-list">
-                  <!--List of all candidates and their info: can-list-->
+              <div id="can-list-hidden">
+                  <!--List of all candidates and their info: can-list. Remove "-hidden" from id to show list-->
               </div>
           </div>
 
       </div>
 
+      <div hidden class="container">
+          <div class="row">
+              <div class="test">
+                  <p align="center"><strong>${name}</strong> (D-${challenger})</p>
+                  <p align="center">District ${}</p>
+              </div>
+          </div>
+      </div>
+
       <hr>
-
-
 
 
       <script type="text/javascript" src="mapper.js"> </script>
