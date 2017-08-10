@@ -11,8 +11,10 @@ map.scrollWheelZoom.disable();
 console.log("Disabled scrollWheelZoom");
 
 //set no pan allowed
-map.dragging.disable();
-console.log("Disabled panning.");
+
+
+
+console.log("Disabled panning outside bounds.");
 //pan disallowed
 
 map.setMinZoom(7); //dont allow zoom out from seeing all of virginia
@@ -44,8 +46,8 @@ function getProfile(num) {
     }
 
     var candidate_template = `
-    <div id="candidate" class="col">
-    <h3> District ${num}</h3>
+        <div id="candidate" class="col">
+        <h3> District ${num}</h3>
 
          <div >
              <img id="candidate_img" src="${img_link}" alt="No image.">
@@ -57,10 +59,10 @@ function getProfile(num) {
        </div>
        <br>
        <br>
-   </div>`
+       </div>`
 
-   $("#candidate").html(candidate_template); // bring up bottom lower right candidate info
-   $("#candidate").show();
+   //$("#candidate").html(candidate_template); // bring up bottom lower right candidate info
+   //$("#candidate").show();
 
    return candidate_template;
 }
@@ -68,46 +70,48 @@ function getProfile(num) {
 
 //set pop up on map click
 function onEachFeature(feature, layer) {
-    if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) {
-        //create pop up for districts dems are running in
 
+    layer.on('mouseover', function(){
+        if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) {
+            //create pop up for districts dems are running in
 
+              //testing feature.properties.DISTRICT_N
+              //console.log("checking" + feature.properties.NAME);
+              //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
 
-          //testing feature.properties.DISTRICT_N
-          //console.log("checking" + feature.properties.NAME);
-          //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
+              var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
+              var sitelink = candidates[feature.properties.NAME]["Website"];
+              var facebooklink = candidates[feature.properties.NAME]["Facebook"];
+              var first = candidates[feature.properties.NAME]["First"];
+              var last = candidates[feature.properties.NAME]["Last"];
+              var img_link = candidates[feature.properties.NAME]["Photo"];
 
-          var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
-          var sitelink = candidates[feature.properties.NAME]["Website"];
-          var facebooklink = candidates[feature.properties.NAME]["Facebook"];
-          var first = candidates[feature.properties.NAME]["First"];
-          var last = candidates[feature.properties.NAME]["Last"];
-          var img_link = candidates[feature.properties.NAME]["Photo"];
+              //decide if Incumbent or Challenger
+              var challenger;
 
-          //decide if Incumbent or Challenger
-          var challenger;
+              if(candidates[feature.properties.NAME]["chal"] == "c"){
+                  challenger = "Challenger";
+              }else{
+                  challenger = "Incumbent";
+              }
 
-          if(candidates[feature.properties.NAME]["chal"] == "c"){
-              challenger = "Challenger";
-          }else{
-              challenger = "Incumbent";
-          }
+              //add above elements to popup dynamically
 
-          //add above elements to popup dynamically
+              var popupTemplate = `
+              <div id="" class="col">
+              <p align="center"><strong>${first} ${last}</strong> (D-${challenger})</p>
+              <p align="center">District ${feature.properties.NAME}</p>
+             </div>`;
 
-          var popupTemplate = `
-          <div id="" class="col">
-          <p align="center"><strong>${first} ${last}</strong> (D-${challenger})</p>
-          <p align="center">District ${feature.properties.NAME}</p>
-         </div>`;
+              layer.bindPopup(popupTemplate);
+        }else{
+            //do nothing... for now
+            var popupTemplate = `<p><strong>Uncontested.</strong></p>
+                                    <p>District ${feature.properties.NAME}</p>   `;
+            layer.bindPopup(popupTemplate)
+        }
+        });
 
-          layer.bindPopup(popupTemplate);
-    }else{
-        //do nothing... for now
-        var popupTemplate = `<p><strong>Uncontested.</strong></p>
-                                <p>District ${feature.properties.NAME}</p>   `;
-        layer.bindPopup(popupTemplate)
-    }
 
     //On each feature
     layer.on({
@@ -150,7 +154,7 @@ function style(feature) {
             }
         }else{
             return{
-                fillColor: '#d8d8d8', //make it blue if dem running.
+                fillColor: '#a3a3a3', //make it blue if dem running.
                 weight: .7,
                 opacity: 1,
                 color: '#ffffff',
@@ -170,26 +174,27 @@ function style(feature) {
             };
 
             // method that we will use to update the control based on feature properties passed
-            info.update = function (props) {
+            /*info.update = function (props) {
                 this._div.innerHTML =  'Click on your district.';
             };
 
-            info.addTo(map);
+            info.addTo(map);*/
         //=======================end info box===//
 
         //=========hover animation=========//
         function highlightFeature(e) {
         var layer = e.target;
+        layer.openPopup();
 
         console.log();
 
-        console.log("hover event.");
+        console.log("hover event at district " + layer.feature.properties.NAME);
 
         layer.setStyle({
-            weight: 3,
+            weight: 1,
             color: '#2335ff',
             dashArray: '',
-            fillOpacity: 0.7
+            fillOpacity: 0.3
         });
 
 
@@ -198,24 +203,28 @@ function style(feature) {
             layer.bringToFront();
         }
 
-        //tell the user what district is selected
-        info.update = function (props) {
+        //tell the user what district is hover in top right
+        /*info.update = function (props) {
             this._div.innerHTML =  'District #' + layer.feature.properties.NAME;
         };
-        info.addTo(map);
+        info.addTo(map);*/
 
         //test getting feature from layer
         //console.log("layer -> feat num: " + layer.feature.properties.NAME);
+
+        //===== TODO bring up hover pop up ===== //
     }
 
     //put highlight on hover back to normal when you leave that district
     function resetHighlight(e) {
         geoJson.resetStyle(e.target);
+
+        //display district number in top right corner
+        /*
         info.update = function (props) {
             this._div.innerHTML =  'Click on your district.';
-        };
+        };info.addTo(map);*/
 
-        info.addTo(map);
     }
 
     //jquery to create element in paage for the candidate of the district that was clicked on
@@ -229,6 +238,8 @@ function style(feature) {
 
             getProfile(feature.properties.NAME);
         }
+
+
 
     }
 

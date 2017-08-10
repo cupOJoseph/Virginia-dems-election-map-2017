@@ -12,8 +12,7 @@
 #sm_candidate_img
 {
     display: inline-block;
-    border-style: solid;
-    border-color: rgb(48, 65, 255, 0.4);
+    /*border-style: solid;*/
     height: 85px;
 }
 
