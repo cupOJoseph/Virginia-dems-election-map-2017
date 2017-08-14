@@ -12,9 +12,9 @@ console.log("Disabled scrollWheelZoom");
 map.setMinZoom(7);
 console.log("set min zoom level to 7");
 
-var p1 = L.point(-83.7652, 36.5425),
-p2 = L.point(-74.9268, 39.5440),
-bounds = L.bounds(p1, p2);
+var p1 = L.point(-83.7652, 36.5425);
+var p2 = L.point(-74.9268, 39.5440);
+var bounds = L.bounds(p1, p2);
 
 map.setMaxBounds(bounds);
 console.log("max bounds set.");
@@ -71,8 +71,6 @@ function onEachFeature(feature, layer) {
     if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) {
         //create pop up for districts dems are running in
 
-
-
           //testing feature.properties.DISTRICT_N
           //console.log("checking" + feature.properties.NAME);
           //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
@@ -86,7 +84,6 @@ function onEachFeature(feature, layer) {
 
           //decide if Incumbent or Challenger
            var challenger;
-
            if(candidates[feature.properties.NAME]["chal"] == "c"){
                challenger = "Challenger";
            }else{
@@ -148,7 +145,7 @@ function style(feature) {
             }
         }else{
             return{
-                fillColor: '#d8d8d8', //make it grey if no dem running.
+                fillColor: '#b7b7b7', //make it grey if no dem running.
                 weight: 2,
                 opacity: 1,
                 color: 'white',
@@ -158,36 +155,20 @@ function style(feature) {
         }
 }
 
-    //=========info box=====//
-            var info = L.control();
-
-            info.onAdd = function (map) {
-                this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-                this.update();
-                return this._div;
-            };
-
-            // method that we will use to update the control based on feature properties passed
-            info.update = function (props) {
-                this._div.innerHTML =  'Click on your district.';
-            };
-
-            info.addTo(map);
-        //=======================end info box===//
 
         //=========hover animation=========//
         function highlightFeature(e) {
         var layer = e.target;
 
-        console.log();
+        layer.openPopup();
 
         console.log("hover event.");
 
         layer.setStyle({
-            weight: 5,
-            color: '#ffffff',
+            weight: 2,
+            color: '#3e38ff',
             dashArray: '',
-            fillOpacity: 0.7
+            fillOpacity: 0.3
         });
 
 
@@ -196,11 +177,7 @@ function style(feature) {
             layer.bringToFront();
         }
 
-        //tell the user what district is selected
-        info.update = function (props) {
-            this._div.innerHTML =  'District #' + layer.feature.properties.NAME;
-        };
-        info.addTo(map);
+
 
         //test getting feature from layer
         //console.log("layer -> feat num: " + layer.feature.properties.NAME);
@@ -209,11 +186,7 @@ function style(feature) {
     //put highlight on hover back to normal when you leave that district
     function resetHighlight(e) {
         geoJson.resetStyle(e.target);
-        info.update = function (props) {
-            this._div.innerHTML =  'Click on your district.';
-        };
 
-        info.addTo(map);
     }
 
     //jquery to create element in paage for the candidate of the district that was clicked on
