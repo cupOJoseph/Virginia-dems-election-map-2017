@@ -230,5 +230,6 @@ geoJson = L.geoJson(districts, {
     $("#candidate_dropdown ").change(function () { //when the drop down changes, do a thing
         var choice = $(this).find("option:selected").val(); //get selected value
 
-        getProfile(choice);
+        //TODO bring down the list to that number
+        //ID of element = "can##"
     });
