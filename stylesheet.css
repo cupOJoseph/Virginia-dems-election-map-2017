@@ -1,6 +1,6 @@
 #mapid
 {
-    height: 420px; /*553*/
+    height: 450px; /*553*/
     width: 954px;
 }
 
@@ -83,4 +83,17 @@
 
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.leaflet-control-attribution {
+     display: none;
+ }
+
+ .holder{
+     display: inline-block;
+     bottom: 0;
+  }
+
+.list_el{
+         display: inline-block;
 }

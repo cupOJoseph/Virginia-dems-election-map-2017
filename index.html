@@ -42,15 +42,12 @@
 
       <div class="container">
           <div class="row">
-              <div class="col-12" id="mapid2"> <!--change id to "mapid" to reload map.-->
+              <div class="col-12" id="mapid"> <!--change id to "mapid" to reload map.-->
 
               </div>
           </div>
           <div class="row">
               <div class="col">
-                  <br>
-                  <h1>See who your Candidate is.</h1>
-                  <p>Connect with them.</p>
                   <br>
                   <select class="option" id="candidate_dropdown">
                       <option value="1">District #1</option>
@@ -167,6 +164,14 @@
       </div>
 
       <hr>
+
+      <div hidden class="container">
+           <div class="row">
+               <div class="test">
+                  <p align="center"><strong>${name}</strong> (D-${challenger})</p>
+                   <p align="center">District ${}</p>              </div>
+          </div>
+      </div>
 
 
       <script type="text/javascript" src="mapper.js"> </script>

@@ -12,6 +12,13 @@ console.log("Disabled scrollWheelZoom");
 map.setMinZoom(7);
 console.log("set min zoom level to 7");
 
+var p1 = L.point(-83.7652, 36.5425),
+p2 = L.point(-74.9268, 39.5440),
+bounds = L.bounds(p1, p2);
+
+map.setMaxBounds(bounds);
+console.log("max bounds set.");
+
 //districts I dont have info for rn
 var dem_uncontested_list = [11,34,35,36,37,38,39,41,43,44,45,46,47,48,49,52,53,57,63,69,70,71,74,75,77,79,80,86,87,90,92,93,95]; //dark blue
  //list of districts by number where democrats are not running
@@ -46,15 +53,16 @@ function getProfile(num) {
         </div>
         <h1 ><span id="our_candidate_is">${first} ${last} ${challenger}</span></h1>
 
-        <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
-           <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
+            <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> | <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> | <span class="candidate-twitter">           <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
        </div>
        <br>
        <br>
    </div>`
 
-   $("#candidate").html(candidate_template);
-   $("#candidate").show();
+   //$("#candidate").html(candidate_template);
+   //$("#candidate").show(); // bring up bottom lower right candidate info
+
+   return candidate_template;
 }
 
 
@@ -69,36 +77,34 @@ function onEachFeature(feature, layer) {
           //console.log("checking" + feature.properties.NAME);
           //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
 
-          /*var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
+          var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
           var sitelink = candidates[feature.properties.NAME]["Website"];
           var facebooklink = candidates[feature.properties.NAME]["Facebook"];
           var first = candidates[feature.properties.NAME]["First"];
           var last = candidates[feature.properties.NAME]["Last"];
           var img_link = candidates[feature.properties.NAME]["Photo"];
 
+          //decide if Incumbent or Challenger
+           var challenger;
 
+           if(candidates[feature.properties.NAME]["chal"] == "c"){
+               challenger = "Challenger";
+           }else{
+               challenger = "Incumbent";
+           }
           //add above elements to popup dynamically
 
           var popupTemplate = `
-          <div id=""  class="col">
-          <h3  id="num"> District ${feature.properties.NAME}</h3>
-             <br>
-           <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
+          <div id="" class="col">
+           <p align="center"><strong>${first} ${last}</strong> (D-${challenger})</p>
+           <p align="center">District ${feature.properties.NAME}</p>
+          </div>`;
 
-               <div >
-                   <img id="candidate_img" src="${img_link}" alt="No image.">
-              </div>
-
-              <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
-                 <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
-             </div>
-             <br>
-             <br>
-         </div>`;*/
-
-          //layer.bindPopup(popupTemplate);
+          layer.bindPopup(popupTemplate);
     }else{
-        //do nothing... for now
+        var popupTemplate = `<p><strong>Uncontested.</strong></p>
+                            <p>District ${feature.properties.NAME}</p>   `;
+        layer.bindPopup(popupTemplate);
     }
 
     //On each feature
