@@ -7,17 +7,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/schiarizzi/cj59vuej16abk2rmt34iod7
 
 //disable scroll with wheel so it fits into website nicer.
 map.scrollWheelZoom.disable();
-
 console.log("Disabled scrollWheelZoom");
 
-//set no pan allowed
-
-
-
-console.log("Disabled panning outside bounds.");
-//pan disallowed
-
-map.setMinZoom(7); //dont allow zoom out from seeing all of virginia
+map.setMinZoom(7);
 console.log("set min zoom level to 7");
 
 //districts I dont have info for rn
@@ -46,72 +38,68 @@ function getProfile(num) {
     }
 
     var candidate_template = `
-        <div id="candidate" class="col">
-        <h3> District ${num}</h3>
+    <div id="candidate" class="col">
+    <h3> District ${num}</h3>
 
          <div >
              <img id="candidate_img" src="${img_link}" alt="No image.">
         </div>
         <h1 ><span id="our_candidate_is">${first} ${last} ${challenger}</span></h1>
 
-        <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> | <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> | <span class="candidate-twitter">
+        <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
            <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
        </div>
        <br>
        <br>
-       </div>`
+   </div>`
 
-   //$("#candidate").html(candidate_template); // bring up bottom lower right candidate info
-   //$("#candidate").show();
-
-   return candidate_template;
+   $("#candidate").html(candidate_template);
+   $("#candidate").show();
 }
 
 
 //set pop up on map click
 function onEachFeature(feature, layer) {
+    if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) {
+        //create pop up for districts dems are running in
 
-    layer.on('mouseover', function(){
-        if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) {
-            //create pop up for districts dems are running in
 
-              //testing feature.properties.DISTRICT_N
-              //console.log("checking" + feature.properties.NAME);
-              //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
 
-              var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
-              var sitelink = candidates[feature.properties.NAME]["Website"];
-              var facebooklink = candidates[feature.properties.NAME]["Facebook"];
-              var first = candidates[feature.properties.NAME]["First"];
-              var last = candidates[feature.properties.NAME]["Last"];
-              var img_link = candidates[feature.properties.NAME]["Photo"];
+          //testing feature.properties.DISTRICT_N
+          //console.log("checking" + feature.properties.NAME);
+          //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
 
-              //decide if Incumbent or Challenger
-              var challenger;
+          /*var twitterlink = "https://twitter.com/" + candidates[feature.properties.NAME]["Twitter"];
+          var sitelink = candidates[feature.properties.NAME]["Website"];
+          var facebooklink = candidates[feature.properties.NAME]["Facebook"];
+          var first = candidates[feature.properties.NAME]["First"];
+          var last = candidates[feature.properties.NAME]["Last"];
+          var img_link = candidates[feature.properties.NAME]["Photo"];
 
-              if(candidates[feature.properties.NAME]["chal"] == "c"){
-                  challenger = "Challenger";
-              }else{
-                  challenger = "Incumbent";
-              }
 
-              //add above elements to popup dynamically
+          //add above elements to popup dynamically
 
-              var popupTemplate = `
-              <div id="" class="col">
-              <p align="center"><strong>${first} ${last}</strong> (D-${challenger})</p>
-              <p align="center">District ${feature.properties.NAME}</p>
-             </div>`;
+          var popupTemplate = `
+          <div id=""  class="col">
+          <h3  id="num"> District ${feature.properties.NAME}</h3>
+             <br>
+           <h1 ><span id="our_candidate_is">${first} ${last}</span></h1>
 
-              layer.bindPopup(popupTemplate);
-        }else{
-            //do nothing... for now
-            var popupTemplate = `<p><strong>Uncontested.</strong></p>
-                                    <p>District ${feature.properties.NAME}</p>   `;
-            layer.bindPopup(popupTemplate)
-        }
-        });
+               <div >
+                   <img id="candidate_img" src="${img_link}" alt="No image.">
+              </div>
 
+              <div class="candidate-info"> <span  class="candidate-website"><a href="${sitelink}" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="${facebooklink}" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
+                 <a href="${twitterlink}" target="_blank" class="prim">Twitter</a></span>
+             </div>
+             <br>
+             <br>
+         </div>`;*/
+
+          //layer.bindPopup(popupTemplate);
+    }else{
+        //do nothing... for now
+    }
 
     //On each feature
     layer.on({
@@ -135,9 +123,9 @@ function style(feature) {
                 //contested, make it light blue
                 return {
                     fillColor: '#91b0ff', //make it blue if dem running.
-                    weight: .7,
+                    weight: 2,
                     opacity: 1,
-                    color: '#ffffff',
+                    color: 'white',
                     dashArray: '.25',
                     fillOpacity: 0.7
                 };
@@ -145,19 +133,19 @@ function style(feature) {
                 //un contested, make it dark blue
                 return {
                     fillColor: '#3a41ff', //make it blue if dem running.
-                    weight: .7,
+                    weight: 2,
                     opacity: 1,
-                    color: '#ffffff',
+                    color: 'white',
                     dashArray: '.25',
                     fillOpacity: 0.7
                 };
             }
         }else{
             return{
-                fillColor: '#a3a3a3', //make it blue if dem running.
-                weight: .7,
+                fillColor: '#d8d8d8', //make it blue if dem running.
+                weight: 2,
                 opacity: 1,
-                color: '#ffffff',
+                color: 'white',
                 dashArray: '.25',
                 fillOpacity: 0.7
             }
@@ -174,27 +162,26 @@ function style(feature) {
             };
 
             // method that we will use to update the control based on feature properties passed
-            /*info.update = function (props) {
+            info.update = function (props) {
                 this._div.innerHTML =  'Click on your district.';
             };
 
-            info.addTo(map);*/
+            info.addTo(map);
         //=======================end info box===//
 
         //=========hover animation=========//
         function highlightFeature(e) {
         var layer = e.target;
-        layer.openPopup();
 
         console.log();
 
-        console.log("hover event at district " + layer.feature.properties.NAME);
+        console.log("hover event.");
 
         layer.setStyle({
-            weight: 1,
-            color: '#2335ff',
+            weight: 5,
+            color: '#ffffff',
             dashArray: '',
-            fillOpacity: 0.3
+            fillOpacity: 0.7
         });
 
 
@@ -203,28 +190,24 @@ function style(feature) {
             layer.bringToFront();
         }
 
-        //tell the user what district is hover in top right
-        /*info.update = function (props) {
+        //tell the user what district is selected
+        info.update = function (props) {
             this._div.innerHTML =  'District #' + layer.feature.properties.NAME;
         };
-        info.addTo(map);*/
+        info.addTo(map);
 
         //test getting feature from layer
         //console.log("layer -> feat num: " + layer.feature.properties.NAME);
-
-        //===== TODO bring up hover pop up ===== //
     }
 
     //put highlight on hover back to normal when you leave that district
     function resetHighlight(e) {
         geoJson.resetStyle(e.target);
-
-        //display district number in top right corner
-        /*
         info.update = function (props) {
             this._div.innerHTML =  'Click on your district.';
-        };info.addTo(map);*/
+        };
 
+        info.addTo(map);
     }
 
     //jquery to create element in paage for the candidate of the district that was clicked on
@@ -238,8 +221,6 @@ function style(feature) {
 
             getProfile(feature.properties.NAME);
         }
-
-
 
     }
 

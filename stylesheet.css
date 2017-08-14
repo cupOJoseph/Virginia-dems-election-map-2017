@@ -1,6 +1,6 @@
 #mapid
 {
-    height: 450px; /*553*/
+    height: 420px; /*553*/
     width: 954px;
 }
 
@@ -12,16 +12,13 @@
 #sm_candidate_img
 {
     display: inline-block;
-    /*border-style: solid;*/
+    border-style: solid;
+    border-color: rgb(48, 65, 255, 0.4);
     height: 85px;
 }
 
 #can-list h3, #can-list p{
     display: inline-block;
-}
-
-.leaflet-control-attribution {
-    display: none;
 }
 
 .holder{
@@ -67,4 +64,23 @@
 
 .list_el{
         display: inline-block;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
