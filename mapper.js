@@ -122,7 +122,7 @@ function style(feature) {
             if(dem_uncontested_list.indexOf(parseInt(feature.properties.NAME)) == -1){
                 //contested, make it light blue
                 return {
-                    fillColor: '#91b0ff', //make it blue if dem running.
+                    fillColor: '#91b0ff', //make it light blue if dem running and contested
                     weight: 2,
                     opacity: 1,
                     color: 'white',
@@ -132,7 +132,7 @@ function style(feature) {
             }else{
                 //un contested, make it dark blue
                 return {
-                    fillColor: '#3a41ff', //make it blue if dem running.
+                    fillColor: '#3a41ff', //make it blue if dem running and not contested
                     weight: 2,
                     opacity: 1,
                     color: 'white',
@@ -142,7 +142,7 @@ function style(feature) {
             }
         }else{
             return{
-                fillColor: '#d8d8d8', //make it blue if dem running.
+                fillColor: '#d8d8d8', //make it grey if no dem running.
                 weight: 2,
                 opacity: 1,
                 color: 'white',
