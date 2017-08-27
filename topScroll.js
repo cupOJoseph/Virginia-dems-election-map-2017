@@ -15,3 +15,18 @@ function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
+
+//Use drop down info to select a state and scroll down to that candidate's line.
+$("#candidate_dropdown ").change(function () { //when the drop down changes, do a thing
+    var choice = $(this).find("option:selected").val(); //get selected value
+
+    //TODO bring down the list to that number
+    //ID of element = "can##"
+
+    //div id = "can#"
+    var element = "#can" + choice;
+
+    $('html, body').animate({
+        scrollTop: $(element).offset().top
+    }, 2000);
+});

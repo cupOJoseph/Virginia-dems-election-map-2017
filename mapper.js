@@ -225,11 +225,3 @@ geoJson = L.geoJson(districts, {
           style: style,
           onEachFeature
         }).addTo(map);
-
-    //Use drop down info to select a state and bring up the profile.
-    $("#candidate_dropdown ").change(function () { //when the drop down changes, do a thing
-        var choice = $(this).find("option:selected").val(); //get selected value
-
-        //TODO bring down the list to that number
-        //ID of element = "can##"
-    });
