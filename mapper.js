@@ -71,6 +71,8 @@ function onEachFeature(feature, layer) {
     if (replist.indexOf(parseInt(feature.properties.NAME)) == -1) {
         //create pop up for districts dems are running in
 
+
+
           //testing feature.properties.DISTRICT_N
           //console.log("checking" + feature.properties.NAME);
           //console.log("candidate " + feature.properties.NAME + " = " + candidates[feature.properties.NAME]["First"] + " " +  candidates[feature.properties.NAME]["Last"] + " " + candidates[feature.properties.NAME]["Twitter"]);
@@ -189,7 +191,7 @@ function style(feature) {
 
     }
 
-    //jquery to create element in paage for the candidate of the district that was clicked on
+    //jquery to create element in page for the candidate of the district that was clicked on
     //this function called on mouse click.
     function getCandidate(e){
         console.log("Click event logged at district: " + e.target.feature.properties.NAME);
@@ -199,7 +201,21 @@ function style(feature) {
         if(replist.indexOf(parseInt(feature.properties.NAME)) == -1){ //if a democrat is running in this area
 
             getProfile(feature.properties.NAME);
-        }
+
+            //===== scroll to the candidate row of the district that was clicked. ===//
+
+            //div id = "can#"
+            var element = "#can" + feature.properties.NAME;
+
+            $('html, body').animate({
+                scrollTop: $(element).offset().top
+            }, 2000);
+
+            //===== done scroll ===//
+        } //dont scroll of non-democrat running districts
+
+
+
 
     }
 
