@@ -42,16 +42,14 @@
 
       <div class="container">
           <div class="row">
-              <div class="col-12" id="mapid">
+              <div class="col-12" id="mapid"> <!--change id to "mapid" to reload map.-->
 
               </div>
           </div>
           <div class="row">
               <div class="col">
-                  <p>Choose your district on the map <br>or select from the dropdown.</p>
                   <br>
                   <select class="option" id="candidate_dropdown">
-
                       <option value="1">District #1</option>
                       <option value="2">District #2</option>
                       <option value="3">District #3</option>
@@ -154,19 +152,34 @@
 
       <div class="container">
           <div class="row">
-              <div id="can-list-hidden">
-                  <!--List of all candidates and their info: can-list. Remove "-hidden" from id to show list-->
+              <div id="can-list">
+                  <!--List of all candidates and their info: can-list-->
+                  <div id="can1" class="col list_el">
+
+                    <div class="holder">    <h3>District 1</h3></div>
+                       <img id="sm_candidate_img" src="link" alt="No image available.">
+                       <h3><span id="Lour_candidate_is">Alicia Kallen (Challenger)</span></h3>
+                       <span class="candidate-website"><a href="http://www.alicia4swva.com/" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="https://www.facebook.com/alicia4swva/" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
+                          <a href="https://twitter.com/@alicia4swva" target="_blank" class="prim">Twitter</a></span>
+
+                          <hr>
+                 </div>
               </div>
           </div>
 
       </div>
 
+      <div>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </div>
+
+      <hr>
+
       <div hidden class="container">
-          <div class="row">
-              <div class="test">
+           <div class="row">
+               <div class="test">
                   <p align="center"><strong>${name}</strong> (D-${challenger})</p>
-                  <p align="center">District ${}</p>
-              </div>
+                   <p align="center">District ${}</p>              </div>
           </div>
       </div>
 
