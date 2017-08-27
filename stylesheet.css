@@ -21,10 +21,6 @@
     display: inline-block;
 }
 
-.leaflet-control-attribution {
-    display: none;
-}
-
 .holder{
     display: inline-block;
     bottom: 0;
@@ -68,4 +64,36 @@
 
 .list_el{
         display: inline-block;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #3a41ff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.leaflet-control-attribution {
+     display: none;
+ }
+
+ .holder{
+     display: inline-block;
+     bottom: 0;
+  }
+
+.list_el{
+         display: inline-block;
 }

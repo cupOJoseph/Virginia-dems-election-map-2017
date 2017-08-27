@@ -16,7 +16,7 @@ for (var key in candidates) {
     }
 
     var list_element = `
-    <div class="col list_el">
+    <div id="can${key}" class="col list_el">
 
         <div class="holder">    <h3>District ${key}</h3></div>
            <img id="sm_candidate_img" src="${Limg_link}" alt="No image available.">
