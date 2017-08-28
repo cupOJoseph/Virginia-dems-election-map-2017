@@ -17,7 +17,7 @@
     height: 85px;
 }
 
-#can-list h3, #can-list p{
+.can-list h3, .can-list p{
     display: inline-block;
 }
 
@@ -26,7 +26,7 @@
     bottom: 0;
 }
 
-#can-list span:before, p:before{
+.can-list span:before, p:before{
     content:" ";
     display:inline-block;
     width:24px;
@@ -66,10 +66,10 @@
         display: inline-block;
 }
 
-#myBtn {
+#myBtn { /*jump to the top button*/
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    top: 40px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */

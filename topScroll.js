@@ -2,7 +2,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
@@ -19,7 +19,7 @@ function topFunction() {
 //Use drop down info to select a state and scroll down to that candidate's line.
 $("#candidate_dropdown ").change(function () { //when the drop down changes, do a thing
     var choice = $(this).find("option:selected").val(); //get selected value
-    
+
     //ID of element = "can##"
 
     //div id = "can#"

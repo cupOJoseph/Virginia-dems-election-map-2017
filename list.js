@@ -43,5 +43,11 @@ for (var key in candidates) {
      }
 
 
-    $("#can-list").append(list_element);
+     //sort list by challengers first. And then Incumbents.
+     if(candidates[key]["chal"] == "c"){
+         $("#challenger-list").append(list_element);
+     }else{
+         $("#incumbent-list").append(list_element);
+     }
+
 }
