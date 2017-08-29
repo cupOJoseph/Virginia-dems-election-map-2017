@@ -9,7 +9,7 @@
     display: inline-block;
     /*border-style: solid;
     border-color: rgb(48, 65, 255, 0.4);*/
-    height: 200px;
+    width: 240px;
 }
 
 .link_btn{
@@ -18,8 +18,10 @@
     background-color: #3a41ff; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 .can-list h3, .can-list p{
