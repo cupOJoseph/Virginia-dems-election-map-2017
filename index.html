@@ -22,7 +22,7 @@
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
 
-            <!--bootstrap style and js-->
+            <!--bootstrap 4 style and js-->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -42,7 +42,7 @@
 
       <div class="container">
           <div class="row">
-              <div class="col-12" id="mapid"> <!--change id to "mapid" to reload map.-->
+              <div align="center" class="col-12" id="mapid"> <!--change id to "mapid" to reload map.-->
 
               </div>
           </div>
@@ -152,27 +152,41 @@
 
       <div class="container">
           <div class="row">
-
-              <h1>Challengers</h1>
-              <br>
-              <br>
+              <div class="sublist-header">
+                <h1>Challengers</h1>
+                <br>
+                <br>
+              </div>
+          </div>
+          <div class="row">
               <div id="challenger-list" class="can-list">
                   <!--List of all candidates and their info: can-list-->
-                  <!--<div id="can1" class="col list_el">
+                  <div id="can1" class="col list_el">
 
-                    <div class="holder">    <h3>District 1</h3></div>
-                       <img id="sm_candidate_img" src="link" alt="No image available.">
-                       <h3><span id="Lour_candidate_is">Alicia Kallen (Challenger)</span></h3>
-                       <span class="candidate-website"><a href="http://www.alicia4swva.com/" target="_blank" class="prim">Website</a></span> <span class="candidate-facebook"><a href="https://www.facebook.com/alicia4swva/" target="_blank" class="prim">Facebook</a></span> <span class="candidate-twitter">
-                          <a href="https://twitter.com/@alicia4swva" target="_blank" class="prim">Twitter</a></span>
+                    <div class="district_name" align="center">
+                        <h3>${Lfirst} ${Llast} - District ${key}</h3>
+                        <h4>Democratic ${Lchallenger}</h4>
+                    </div>
+                    <div class="row">
+                        <img class="sm_candidate_img" src="http://fourthwavestudios.com/img/team/joseph.avatar.png" alt="No image available.">
 
-                          <hr>
-                 </div>-->
+                        <a href="#website"><button class="link_btn">Website</button></a>
+                        <a href="#facebook"><button class="link_btn">Facebook</button></a>
+                        <a href="#twitter"><button class="link_btn">Twitter</button></a>
+                    </div>
+
+                 </div>
               </div>
+          </div>
 
-              <h1>Incumbents</h1>
-              <br>
-              <br>
+          <div class="row">
+              <div class="sublist-header">
+                <h1>Incumbents</h1>
+                <br>
+                <br>
+              </div>
+          </div>
+          <div class="row">
               <div id="incumbent-list" class="can-list">
 
               </div>

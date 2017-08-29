@@ -4,17 +4,22 @@
     width: 954px;
 }
 
-#candidate_img
-{
-    height: 125px;
-}
-
-#sm_candidate_img
+.sm_candidate_img
 {
     display: inline-block;
-    border-style: solid;
-    border-color: rgb(48, 65, 255, 0.4);
-    height: 85px;
+    /*border-style: solid;
+    border-color: rgb(48, 65, 255, 0.4);*/
+    height: 200px;
+}
+
+.link_btn{
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #3a41ff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .can-list h3, .can-list p{

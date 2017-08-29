@@ -10,16 +10,16 @@ for (var key in candidates) {
     var Lchallenger;
 
     if(candidates[key]["chal"] == "c"){
-        Lchallenger = "(Challenger)";
+        Lchallenger = "Challenger";
     }else{
-        Lchallenger = "(Incumbent)";
+        Lchallenger = "Incumbent";
     }
 
     var list_element = `
     <div id="can${key}" class="col list_el">
 
         <div class="holder">    <h3>District ${key}</h3></div>
-           <img id="sm_candidate_img" src="${Limg_link}" alt="No image available.">
+           <img class="sm_candidate_img" src="${Limg_link}" alt="No image available.">
            <h3 ><span id="Lour_candidate_is">${Lfirst} ${Llast} ${Lchallenger}</span></h3>
            <span><a href="${Lsitelink}" target="_blank" class="prim">Website</a> | <a href="${Lfacebooklink}" target="_blank" class="prim">Facebook</a> |
               <a href="${Ltwitterlink}" target="_blank" class="prim">Twitter</a></span>
@@ -33,7 +33,7 @@ for (var key in candidates) {
          <div id="can${key}" class="col list_el">
 
              <div class="holder">    <h3>District ${key}</h3></div>
-                <img id="sm_candidate_img" src="${Limg_link}" alt="No image available.">
+                <img class="sm_candidate_img" src="${Limg_link}" alt="No image available.">
                 <h3 ><span id="Lour_candidate_is">${Lfirst} ${Llast} ${Lchallenger}</span></h3>
                 <a href="${Lsitelink}" target="_blank" class="prim">Website</a> | <a href="${Lfacebooklink}" target="_blank" class="prim">Facebook</a> |
                    <a href="${Ltwitterlink}" target="_blank" class="prim">Twitter</a>
