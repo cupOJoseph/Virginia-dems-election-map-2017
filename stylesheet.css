@@ -17,11 +17,16 @@
     outline: none; /* Remove outline */
     background-color: #3a41ff; /* Set a background color */
     color: white; /* Text color */
+    font-size: 25px;
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     margin-left: 5px;
     margin-top: 5px;
+}
+
+.link_btn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
 .can-list h3, .can-list p{
