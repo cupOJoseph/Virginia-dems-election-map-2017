@@ -16,7 +16,7 @@ for (var key in candidates) {
     }
 
     var list_element = `
-    <div id="can1" class="col list_el">
+    <div id="can${key}" class="col list_el">
 
       <div class="district_name" align="center">
           <h3>${Lfirst} ${Llast} - District ${key}</h3>

@@ -206,6 +206,7 @@ function style(feature) {
 
             //div id = "can#"
             var element = "#can" + feature.properties.NAME;
+            console.log("JUMP to " + element);
 
             $('html, body').animate({
                 scrollTop: $(element).offset().top
