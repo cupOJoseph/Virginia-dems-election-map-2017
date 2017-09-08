@@ -30,7 +30,7 @@ var candidates = {
     "First": "Flo",
     "Last": "Kettner",
     "Photo": "https://lh3.googleusercontent.com/-EqgdiPiNCpbbK5Sek0XcvE92XCtQJWEwzkeWvdbWkBL7bjI2s3wcJhwmsNuPyxOEte-ntlJWOsmtT9UIw4Hq96yTK2sx3D6MgxDlvE7xQl0kAlQ3dQXZTSIyv3XsarSiGdu3Wq367Iv7MbrHbdV7ytub2QDFQnReWcBnKKb6U2ZTG68SdRGvkPbQGinDKAndLqcTdF1wNXD6RkriMaC2pC_3vGat9TsMUHsRx0ZcRJuXoeFZwEyuTQ2rvh0ttVoKo34qQ1suoDP0WCDrNvBkDdct9Q6_5Hydw7Dfdy9B7RgQnvaN4TJV7yys1_xBV3rbcM7jaTFZvalR99irXX_zf3n-SMS9tPaLXgC8enrg_8BP61PUPVXbhqF5ult2HxcL383Ri12b1vRxbb0QJCKuubRafNlbXEwaWLbWYEKBIemzfxsWiLzchwPM1wJy5mcXdykRdD5krqlSfeo6H_fQMVHne20AXw2iEPW3NjMdk2CZGHjNDyDzjfFXsTv008czlwzuczLUGKcHZYcaLsYT58xL0QmGIWXC2-ERDVKM5z7qykKOBFThTNtPktflLv1OzjCApel_k8ePwFu7Wks40bhRjoxn_1yTTQhzKB8kXBZVxPL2Bm0S7b3ahX4D3hI9wYH6do28XVdYi9IpSXNbl_vOXR-KqHdTHcXzo4YWZbD1g=w588-h676-no",
-    "Website": "http://winvirginia.org",
+    "Website": "http://www.floketner.com",
     "Twitter": "@Flo4DelegateNRV",
     "Facebook": "https://www.facebook.com/Flo4NRV/",
     "chal": "c"
@@ -66,7 +66,7 @@ var candidates = {
     "First": "Salam \"Sam",
     "Last": "Rasoul",
     "Photo": "https://lh3.googleusercontent.com/96AMwYOyP_De-lDieaTvBCOF4JkvKh99BhDGC6ZXGsHl-aMj2ioKgIwl4aXQ87U4BssdP-kA-12HNQ54doWPwsk0kHuKW6vpJVApj_rMQFN36q09k6FInm8U1W1vCdHvJtgZLr3t47etzL1MnZjN5HKkCeGzAqvbHlzmWy2STpqKc4swnudDl5hP0_pymIUyReBxX3Ni88uj4Z0LJZyX5CN7lgFBl_8ChRq0zqYkkGje9t_KstWmuetDr_f__HyAAX4DcgcNDo6YSscx3AGqhNDrlfU2O92uhPQhirI9iDAyAHZkDTunjWWpA57KNHZZ1zfsrBPgqhZE2WtiYtHmZfJ8z8kGjTgM5GxBVEymmJeX-44ckHw-pvfeSruQmREMcvoQ-xyYpBBl6Duy1hPgsckJIjwl08Dhy3rF3Wirk0shRbscTXExbn8Xm7x4VX1yBotiFvg9ZuVOTUyMSV9DiUyn0gLARW78rP0qcQQh1LOGGU4M6_bZ2ltyzOxZKWwCoUuoVorIqPhuR2z1wNuRJddN0K1IrdZEMsMOAlxf7rsVuusxSl-5cbAB6DDTC16qqsZYPr9va9Emg7pcqreLwqgsV-3gekzgadAFaaAbMVyM7_uwTkyzwFG7jUazcWP5WipHZXDT3APUJLnDUnvdIgTJrk1rNyTozQ5_c1LzCg6UqQ=s268-no",
-    "Website": "www.sam4roanoke.com",
+    "Website": "https://www.sam4roanoke.com",
     "Twitter": "@Sam_Rasoul",
     "Facebook": "https://www.facebook.com/DelSamRasoul/",
     "chal": "i"
@@ -624,7 +624,7 @@ var candidates = {
     "First": "Leigh Anne",
     "Last": "Bowling",
     "Photo": "https://lh3.googleusercontent.com/OxiYHUeCjNh9r-S20u9Pcc_4m6g8OfxTDe7hggfnmiPwHB-vRNtV5KIx9vXffPvaXyTmE00yByQnckEMZ91131DUx5abhZ2Ks6J7GiWNO3fOzrgnmdHfN43Ld3jbbaNWEn2fmJhA5r3vZqRMArV-2ITUe6XkAv95asqKcK9Yv13g0K82n11E_TzPwwRKDhSAYBE95yWNvFTd34vREPvMZhLnoItqDLOXa9_GDpmmBNAhq2ePgFbEPVxTgYdXdrH1pbBEPwiZFsKHTk1Z_lN3fiewKAZLjUM7HbPJAIOrHL6wieuyzA412hMRXy1qEqUBZvlp2P4WbfLGNWutVIIw3mHM2cjUSbGLblcq10iasibY3-tF0ifmvHSo8JfPHxjdPP1TcBTDo6zvdhMDJLsJt2aVuBwQCmt6ebeAxJkFe18VWsCngYUFmBNGnWG5ep8_wML5HkM_ujsBWTT_Agdcu43Og_5b0JEacEgZ6A8hB4HH-NXB2zo7SY2O0QMhQ0d3E5Fw5mh6W4NmqN1mzF505CG02j2u_RxW2bxul8PZr4a7tuT2S-mLBu3GexR-eEXyPHrJ4doUaVzVcD0xSCcBphDdDkQAjQbC9efjK8GEWLV-ES3CZZx5Ujwep5r1kAAsSwvFmhojJmMHedC35sKJGapuVWxN09O4E6oQapj2MGvY=s200-no",
-    "Website": "http://winvirginia.org",
+    "Website": "https://secure.actblue.com/donate/labowling",
     "Twitter": "@_WinVirginia_",
     "Facebook": "https://www.facebook.com/Leigh-Anne-Bowling-for-VA-Delegate-312832055801177/",
     "chal": "c"
@@ -684,12 +684,12 @@ var candidates = {
     "chal": "c"
   },
   "89": {
-    "First": "Daun",
-    "Last": "Hester (retiring)",
-    "Photo": "http://via.placeholder.com/400x400.png",
-    "Website": "http://winvirginia.org",
+    "First": "Jay",
+    "Last": "Jones",
+    "Photo": "http://www.vahousedems.org/sites/vahousedems2/files/jones.jpg",
+    "Website": "http://www.jayjones.vote",
     "Twitter": "@_WinVirginia_",
-    "Facebook": "https://www.facebook.com/WinVirginia/",
+    "Facebook": "https://www.facebook.com/jayccjonesva/",
     "chal": "i"
   },
   "90": {
